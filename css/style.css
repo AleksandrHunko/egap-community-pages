@@ -46,6 +46,40 @@ img, svg {
   border: none;
 }
 
+select {
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+  padding: 10px;
+  width: 100%;
+	box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	background-image: url('data:image/svg+xml;utf8,<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 7L1 3L7 3L4 7Z" fill="black"/></svg>');
+	background-repeat: no-repeat, repeat;
+	background-position: right .7em top 50%, 0 0;
+  background-size: .65em auto, 100%;
+  outline: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+select:focus {
+	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+	box-shadow: 0 0 0 3px -moz-mac-focusring;
+	outline: none;
+}
+
+select option {
+	font-weight: normal;
+}
+
 /* Typography start */
 
 h1 {
@@ -83,6 +117,7 @@ h6 {
 p {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 300;
 }
 
 
@@ -495,10 +530,36 @@ section.grey {
   margin-bottom: 67px;
 }
 
+.section-news  .news {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news.align-bottom {
+  align-items: flex-end;
+}
+
+
 .section-news .news-block {
   width: 66%;
   display: flex;
   align-items: flex-start;
+}
+
+.section-news .search-block {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.search-block.fixed {
+  position: fixed;
+  width: 26.4%;
+  top: 10px;
+  right: 10%;
 }
 
 
@@ -555,10 +616,79 @@ section.grey {
   background-position: top right;
 }
 
-.search-box {
-  width: 20%;
+.searchbox {
+  padding: 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
+.searchbox button {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.searchbox input {
+  margin: 0 0 0 10px;
+  padding: 0;
+  border: none;
+  height: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  min-width: 130px;
+}
+
+.searchbox input:focus {
+  border: none;
+  outline: none;
+}
+
+.searchbox input:focus::placeholder {
+  color: transparent;
+}
+
+.search-params {
+  margin-top: 20px;
+  padding: 20px 0 40px 0;
+  width: 100%;
+  background-color: #E6EBE6;
+}
+
+.search-params-container {
+  width: 80%;
+  margin: 40px auto;
+
+}
+
+.news-tags {
+  display: flex;
+  padding: 0 10% 0 10%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.news-tag {
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: solid 2px #000;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+
+.news-tag:hover, .news-tag:active, .news-tag.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
 
 .decisions-grid {
   margin-top: 78px;
@@ -667,7 +797,7 @@ section.grey {
   justify-content: space-between;
 }
 
-.council-item img {
+.council-item > img {
   object-fit: cover;
   width: min(48%, 800px);
   height: max(48vh, 800px);
@@ -754,7 +884,7 @@ footer .partner-logos {
    justify-content: flex-start;
  }
  
- .social-icons svg {
+ .social-icons svg,  .social-icons img {
    width: auto;
    margin-right: 10px;
    height: 32px;
@@ -787,7 +917,7 @@ footer .partner-logos {
     width: min(100%, 480px);
     height: max(32vh, 270px);
   }
-  .council-item img {
+  .council-item > img {
     width: min(100%, 400px);
     height: max(48vh, 400px);
   }
@@ -851,6 +981,24 @@ footer .partner-logos {
     grid-row-end: span 2;
   }
 
+  .news {
+    flex-direction: column-reverse;
+  }
+  
+  .section-news .news-block {
+    width: 100%;
+  }
+
+  .section-news .search-block {
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+
+  .search-block.fixed {
+    position: static;
+  }
+
   .news-items .news-item .image-container img {
     width: min(100%, 360px);
     height: min(32vh, 180px);
@@ -890,7 +1038,7 @@ footer .partner-logos {
   
   
 
-  .council-item img {
+  .council-item > img {
     width: min(100%, 360px);
     height: max(48vh, 360px);
   }
@@ -1057,10 +1205,21 @@ footer .partner-logos {
     margin-bottom: 24px;
   }
   
-  .section-news .news-block {
-    width: 100%;
+  .searchbox button {
+    width: 15px;
+    height: 15px;
   }
   
+  .searchbox input {
+    margin: 0 0 0 10px;
+    font-size: 13px;
+    line-height: 18px;
+    width: 120px;
+  }
+
+  .search-block .search-params {
+    display: none;
+  }
   
   .news-items .news-item {
     flex-direction: column-reverse;
