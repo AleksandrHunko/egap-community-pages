@@ -1,6 +1,6 @@
 "use_strict"
 
-window.onload = function () {
+window.onscroll = function () {
 
   if (document.documentElement.scrollTop < document.querySelector('.news-block').offsetTop) {
     document.querySelector('.search-block').classList.remove('fixed')

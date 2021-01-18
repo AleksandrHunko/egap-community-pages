@@ -1,5 +1,4 @@
 "use_strict"
-
 window.onload = function () {
   const menuLinks = document.querySelector('.nav-menu-mobile').querySelectorAll('.nav-elem')
 
