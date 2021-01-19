@@ -83,8 +83,8 @@ select option {
 /* Typography start */
 
 h1 {
-  font-size: 75px;
-  line-height: 90px;
+  font-size: 64px;
+  line-height: 70px;
   font-weight: 500;
 }
 
@@ -94,18 +94,18 @@ h2 {
 }
 
 h3 {
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 36px;
 }
 
 h4 {
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 h5 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 h6 {
@@ -346,15 +346,19 @@ header {
 
 .header-title {
   width: 100%;
-  padding: 50px 15% 60px 20%;
+  padding: 50px 10% 60px 15%;
   justify-content: space-between;
   align-items: flex-start;
   display: flex;
 }
 
+.header-title > div {
+  width: 350px;
+}
+
 .header-title img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 180px;
+  max-height: 180px;
   margin-right: 20px;
 }
 
@@ -567,7 +571,7 @@ section.grey {
   justify-content: space-between;
   align-items: flex-start;
   padding: 0;
-  margin-bottom: 83px;
+  margin-bottom: 80px;
   hyphens: auto;
   overflow: hidden;
 }
@@ -589,17 +593,22 @@ section.grey {
 
 .news-text .date {
   width: 100%;
+  color: #959595;
   line-height: 20px;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 10px;
   margin-bottom: 20px;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid #959595;
 }
 
-.news-text p, .news-text h4 {
+.news-text h4 {
   margin-top: 20px;
   padding-right: 40px;
+}
+
+.news-text p {
+  margin-top: 40px;
 }
 
 .news-text a {
@@ -1128,7 +1137,7 @@ footer .partner-logos {
     margin-top: 20px;
   }
 
-  .header-title div {
+  .header-title > div {
     width: 100%;
     margin-top: 10vh;
     text-align: center;
