@@ -49,7 +49,7 @@ img, svg {
 select {
 	display: block;
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 20px;
   padding: 10px;
   width: 100%;
 	box-sizing: border-box;
@@ -476,17 +476,17 @@ section.grey {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 51px;
-  grid-column-gap: 72px;
+  grid-row-gap: 20px;
+  grid-column-gap: 40px;
 }
 
 .service-item {
   display: flex;
-  height: 360px;
+  height: 320px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 0 0;
   border-top: 2px solid black;
   overflow: hidden;
 }
@@ -494,9 +494,9 @@ section.grey {
 .service-item h3 {
   display: block;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   padding-right: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .service-item a {
@@ -547,11 +547,11 @@ section.grey {
 
 
 .section-news .news-block {
-  width: 66%;
+  width: 65%;
 }
 
 .section-news .search-block {
-  width: 33%;
+  width: 32%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -559,7 +559,7 @@ section.grey {
 
 .search-block.fixed {
   position: fixed;
-  width: 26.4%;
+  width: 25.6%;
   top: 10px;
   right: 10%;
 }
@@ -577,7 +577,7 @@ section.grey {
 }
 
 .news-item .image-container {
-  width: 49%;
+  width: 47%;
 }
 
 .news-item .image-container img {
@@ -588,7 +588,7 @@ section.grey {
 }
 
 .news-item .news-text {
-  width: 49%;
+  width: 48%;
 }
 
 .news-text .date {
@@ -669,7 +669,7 @@ section.grey {
 
 .search-params-container {
   width: 80%;
-  margin: 40px auto;
+  margin: 20px auto;
 
 }
 
@@ -685,6 +685,8 @@ section.grey {
 .news-tag {
   padding: 10px 20px;
   margin-right: 10px;
+  font-size: 13px;
+  line-height: 18px;
   margin-bottom: 10px;
   border: solid 2px #000;
   box-sizing: border-box;
@@ -702,8 +704,8 @@ section.grey {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 51px;
-  grid-column-gap: 72px;
+  grid-row-gap: 40px;
+  grid-column-gap: 40px;
 }
 
 .decisions-item {
@@ -727,7 +729,7 @@ section.grey {
 .decisions-item h5 {
   display: block;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
   padding-right: 40px;
   margin-bottom: 20px;
 }
