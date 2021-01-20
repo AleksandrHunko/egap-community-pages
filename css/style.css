@@ -463,7 +463,7 @@ section.grey {
   border-bottom: solid 2px #000;
 }
 
-.events h2, .events h2 {
+.events h2, .events h4 {
   display: block;
   width: 100%;
   padding-right: 40px;
