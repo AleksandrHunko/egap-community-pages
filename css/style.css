@@ -621,7 +621,7 @@ section.colored {
 
 .main-event .event-part {
   display: block;
-  width: 100%;
+  width: 32%;
 }
 
 .event .event-part, .main-event-with-picture .event-part {
