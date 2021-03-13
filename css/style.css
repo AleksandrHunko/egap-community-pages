@@ -1021,6 +1021,10 @@ a:hover.end-option h3{
   align-items: flex-end;
 }
 
+.search-block form {
+  width: 100%;
+}
+
 .search-block .black-button, .other-block .black-button {
   width: 100%;
 }
