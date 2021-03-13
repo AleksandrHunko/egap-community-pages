@@ -609,7 +609,7 @@ section.colored {
   height: auto;
   object-fit: contain;
   margin-top: -36px;
-  max-width: 55%;
+  width: 55%;
   max-height: 500px;
 }
 
@@ -1539,7 +1539,7 @@ footer .partner-logos {
   
   .main-event-with-picture img {
     margin: auto;
-    max-width: 100%;
+    width: 100%;
     margin-top: 0;
   }
   
