@@ -533,7 +533,7 @@ header.colored {
 /* main start */
 
 section {
-  padding: 80px 6.25% 112px 6.25%;
+  padding: 64px 6.25% 64px 6.25%;
   width: 100%;
 }
 
@@ -607,10 +607,10 @@ section.colored {
 .main-event-with-picture img {
   width: auto;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   margin-top: -36px;
-  width: 55%;
-  max-height: 500px;
+  width: 50%;
+  height: 300px;
 }
 
 .events .event {
