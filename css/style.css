@@ -23,7 +23,7 @@ a {
   font-weight: inherit;
 }
 
-img, svg {
+img {
   width: auto;
   height: 100%;
 }
@@ -251,8 +251,8 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 28px;
+  line-height: 32px;
 }
 
 h5 {
@@ -405,8 +405,8 @@ transform: none;
 
 nav {
   width: 100%;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 15%;
+  padding-right: 15%;
   height: 74px;
   background-color: #fff;
   color: #000;
@@ -511,7 +511,7 @@ header.colored {
 
 .header-title {
   width: 100%;
-  padding: 50px 6.25% 60px 6.25%;
+  padding: 50px 15% 60px 15%;
   flex-direction: column;
   align-items: center;
   display: flex;
@@ -533,7 +533,7 @@ header.colored {
 /* main start */
 
 section {
-  padding: 64px 6.25% 64px 6.25%;
+  padding: 64px 15% 64px 15%;
   width: 100%;
 }
 
@@ -542,7 +542,7 @@ section > a {
   width: 160px;
   justify-content: space-between;
   margin-top: -28px;
-  margin-left: calc(87.5vw - 180px);
+  margin-left: calc(100% - 180px);
   transition: all 0.2s ease-in-out;
 }
 
@@ -759,7 +759,7 @@ section.colored {
 .news-text h4 {
   margin-top: 16px;
   padding-right: 30px;
-  max-height: 84px;
+  max-height: 96px;
   overflow: hidden;
 }
 
@@ -844,7 +844,7 @@ section.colored {
 }
 
 .section-council {
-  padding: 0;
+  padding: 0 4%;
 }
 
 .council {
@@ -960,7 +960,7 @@ a:hover.end-option h3{
 }
 
 .two-column-container .item, .three-column-container .item {
-  width: 28vw;
+  width: 22vw;
   margin-bottom: 32px;
 }
 
@@ -979,7 +979,7 @@ a:hover.end-option h3{
 .three-column-container .item h4 {
   padding-right: 30px;
   margin-bottom: 16px;
-  max-height: 168px;
+  max-height: 192px;
   overflow: hidden;
 }
 
@@ -1203,6 +1203,101 @@ a:hover.end-option h3{
   margin-right: 10px;
 }
 
+.hromada-info {
+  width: 100%;
+  margin-top: 64px;
+  margin-bottom: -48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-top: solid 2px #000;
+  border-bottom: solid 2px #000;
+}
+
+.hromada-info-text {
+  margin-top: 48px;
+  width: 33%;
+}
+
+.hromada-info-text h4 {
+  margin-bottom: 48px;
+}
+
+.hromada-info-text .content-entry {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 16px;
+  margin-bottom: 24px;
+}
+
+.hromada-info-map {
+  width: 67%;
+  height: 450px;
+}
+
+.accordion-menu-level-1, .accordion-menu-level-2 {
+  max-height: 130px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-menu-level-1.open, .accordion-menu-level-2.open {
+  max-height: 10000px;
+  transition: max-height 1s ease-in-out;
+}
+
+.accordion-menu-content {
+  padding: 48px 0;
+  background-image: url('data:image/svg+xml;utf8,<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 0H8V8L0 8V10H8V18H10V10H18V8L10 8V0Z" fill="black"/></svg>');
+  background-position: top 60px right;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.accordion-menu-level-1.open > .accordion-menu-content,
+.accordion-menu-level-2.open > .accordion-menu-content {
+  padding: 48px 24px;
+  color: #fff;
+  background-color: #000;
+  background-image: url('data:image/svg+xml;utf8,  <svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="18" width="2" height="18" transform="rotate(90 18 0)" fill="white"/></svg>');
+  background-position: top 64px right 16px;
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0s;
+  border-bottom: solid 2px #fff;
+}
+
+.accordion-menu-level-2 h4 {
+  padding-left: 72px;
+  transition: padding-left 0.2s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.accordion-menu-level-2.open h4 {
+  padding-left: 48px;
+  transition: padding-left 0.2s ease-in-out;
+  transition-delay: 0s;
+}
+
+.accordion-menu-content h4 {
+  padding-bottom: 48px;
+  border-bottom: solid 2px #000;
+}
+
+.accordion-menu-content .content-entry {
+  width: 748px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 48px;
+  margin: 0 0 24px 48px;
+}
+
+.accordion-menu-content .content-entry a {
+  padding-bottom: 2px;
+  border-bottom: solid 1px #fff;
+}
+
 
 /* page styles end */
 
@@ -1210,10 +1305,8 @@ a:hover.end-option h3{
 /* footer start */
 
 footer {
-  padding: 80px 0 112px 0;
+  padding: 80px 15% 112px 15%;
   width: 100%;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
   display: flex;
   justify-content: space-between;
   background-color: #000;
@@ -1286,7 +1379,69 @@ footer .partner-logos {
 
 /* media start */
 
+@media only screen and (max-width: 1920px) {
+  nav {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
 
+  .header-title {
+    padding: 50px 12% 60px 12%;
+  }
+
+  section {
+    padding: 64px 12% 64px 12%;
+  }
+  .section-council {
+    padding: 0;
+  }
+
+  footer {
+    padding: 80px 12% 112px 12%;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  nav {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .header-title {
+    padding: 50px 10% 60px 10%;
+  }
+
+  section {
+    padding: 64px 10% 64px 10%;
+  }
+
+  footer {
+    padding: 80px 10% 112px 10%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  nav {
+    padding-left: 6.25%;
+    padding-right: 6.25%;
+  }
+
+  .header-title {
+    padding: 50px 6.25% 60px 6.25%;
+  }
+
+  section {
+    padding: 64px 6.25% 64px 6.25%;
+  }
+
+  .two-column-container .item, .three-column-container .item {
+    width: 27vw;
+  }
+
+  footer {
+    padding: 80px 6.25% 112px 6.25%;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -1413,6 +1568,11 @@ footer .partner-logos {
   .three-column-container .item h4 {
     max-height: 156px;
   }
+
+  .accordion-menu-level-1, .accordion-menu-level-2 {
+    max-height: 124px;
+  }
+  
 
   /* page styles end */
 
@@ -1681,6 +1841,56 @@ footer .partner-logos {
 
   .paging .page-button p {
     display: none;
+  }
+
+  .hromada-info {
+    flex-direction: column-reverse;
+  }
+  
+  .hromada-info-text {
+    width: 100%;
+  }
+  
+  .hromada-info-text h4 {
+    margin-bottom: 24px;
+  }
+  
+  .hromada-info-map {
+    width: 100%;
+    height: 300px;
+  }
+
+  .accordion-menu-level-1, .accordion-menu-level-2 {
+    max-height: 76px;
+  }
+  
+  .accordion-menu-content {
+    padding: 24px 0;
+    background-position: top 30px right;
+  }
+  
+  .accordion-menu-level-1.open > .accordion-menu-content,
+  .accordion-menu-level-2.open > .accordion-menu-content {
+    padding: 24px 12px;
+    background-position: top 34px right 8px;
+  }
+  
+  .accordion-menu-level-2 h4 {
+    padding-left: 12px;
+  }
+  
+  .accordion-menu-level-2.open h4 {
+    padding-left: 12px;
+  }
+  
+  .accordion-menu-content h4 {
+    padding-bottom: 24px;
+  }
+  
+  .accordion-menu-content .content-entry {
+    width: 100%;
+    grid-column-gap: 24px;
+    margin: 0 0 24px 0;
   }
 
   /* page styles end */
