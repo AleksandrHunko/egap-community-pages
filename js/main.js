@@ -1,5 +1,5 @@
 "use_strict"
-window.onload = function () {
+window.addEventListener('load', function () {
   const menuLinks = document.querySelector('.nav-menu-mobile').querySelectorAll('.nav-elem')
 
   for (let i = 0; i < menuLinks.length; i++) {
@@ -16,4 +16,4 @@ window.onload = function () {
       document.body.style.overflowY = "auto";
     }
   })
-}
+})
