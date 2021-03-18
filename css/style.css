@@ -705,7 +705,7 @@ section.colored {
   width: 160px;
 }
 
-.news {
+.news, .flex-container {
   margin-top: 32px;
   display: flex;
   align-items: flex-start;
@@ -944,6 +944,21 @@ a:hover.end-option h3{
 
 /* page styles start */
 
+.person-image {
+  width: 32%;
+}
+
+.person-text {
+  width: 67%;
+}
+
+.person-text p {
+  margin-top: 24px;
+}
+.person-text p:first-child {
+  margin-top: 0;
+}
+
 .two-column-container, .three-column-container {
   display: flex;
   flex-wrap: wrap;
@@ -959,9 +974,38 @@ a:hover.end-option h3{
   width: 100%;
 }
 
-.two-column-container .item, .three-column-container .item {
+.two-column-container .item, 
+.three-column-container .item, 
+.person-image .item {
   width: 22vw;
   margin-bottom: 32px;
+}
+
+.image-social-container {
+  position: relative;
+}
+
+.three-column-container .item .image-social-container > img,
+.person-image .item .image-social-container > img {
+  min-height: 200px;
+  min-width: 200px;
+  width: 22vw;
+  height: 22vw;
+  max-height: 500px;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.three-column-container .item .social-icons,
+.person-image .item .social-icons {
+  bottom: 16px;
+  left: 8px;
+  position: absolute;
+}
+
+.three-column-container .item .black-button {
+  margin-top: 16px;
+  width: 80%;
 }
 
 .two-column-container .item .date, 
@@ -976,7 +1020,8 @@ a:hover.end-option h3{
 }
 
 .two-column-container .item h4, 
-.three-column-container .item h4 {
+.three-column-container .item h4,
+.person-image .item h4 {
   padding-right: 30px;
   margin-bottom: 16px;
   max-height: 192px;
@@ -1198,6 +1243,11 @@ a:hover.end-option h3{
   align-items: center;
 }
 
+.paging .page-button.inactive {
+  color: #888;
+  cursor: initial;
+}
+
 .paging .page-button p {
   margin-left: 10px;
   margin-right: 10px;
@@ -1379,7 +1429,7 @@ footer .partner-logos {
 
 /* media start */
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1921px) {
   nav {
     padding-left: 12%;
     padding-right: 12%;
@@ -1434,10 +1484,17 @@ footer .partner-logos {
     padding: 64px 6.25% 64px 6.25%;
   }
 
-  .two-column-container .item, .three-column-container .item {
+  .two-column-container .item, 
+  .three-column-container .item,
+  .person-image .item {
     width: 27vw;
   }
 
+  .three-column-container .item .image-social-container > img,
+  .person-image .item .image-social-container > img {
+    width: 27vw;
+    height: 27vw;
+  }
   footer {
     padding: 80px 6.25% 112px 6.25%;
   }
@@ -1563,9 +1620,15 @@ footer .partner-logos {
   .three-column-container .item {
     width: 42vw;
   }
+
+  .three-column-container .item .image-social-container > img {
+    width: 42vw;
+    height: 42vw;
+  }
   
   .two-column-container .item h4, 
-  .three-column-container .item h4 {
+  .three-column-container .item h4,
+  .person-image .item h4 {
     max-height: 156px;
   }
 
@@ -1810,7 +1873,27 @@ footer .partner-logos {
     width: 100%;
   }
 
-  .two-column-container .item, .three-column-container .item {
+  .person-image {
+    width: 100%;
+  }
+  
+  .person-text {
+    width: 100%;
+  }
+
+  .two-column-container .item, 
+  .three-column-container .item,
+  .person-image .item {
+    width: 100%;
+  }
+
+  .three-column-container .item .image-social-container > img,
+  .person-image .item .image-social-container > img {
+    width: 100%;
+    height: 92vw;
+  }
+  
+  .three-column-container .item .black-button {
     width: 100%;
   }
 
