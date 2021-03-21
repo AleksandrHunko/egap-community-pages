@@ -706,7 +706,7 @@ section.colored {
 }
 
 .news, .flex-container {
-  margin-top: 32px;
+  margin-top: 48px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -856,17 +856,38 @@ section.colored {
 
 .council-white {
   width: 66%;
-  padding: 80px 16px 112px 6%;
+  padding: 64px 16px 64px 12%;
+}
+
+.council-white.colored {
+  background-color: #E7EEF3;
+}
+
+.color-style-1 .council-white.colored {
+  background-color: #E7EEF3;
+}
+
+.color-style-2 .council-white.colored {
+  background-color: #E6EBE6;
 }
 
 
 .council-colored {
   display: flex;
   width: 34%;
-  padding: 184px 3.4% 112px;
+  padding: 168px 3.4% 64px;
   flex-direction: column;
   justify-content: space-between;
   background: #E7EEF380;
+}
+
+.council-colored.no-padding {
+  padding: 64px 3.4% 112px;
+  justify-content: flex-start;
+}
+
+.council-colored.no-padding > div {
+  margin-top: 48px;
 }
 
 .color-style-1 .council-colored {
@@ -910,8 +931,8 @@ section.colored {
   min-width: 200px;
   width: 29vw;
   height: 29vw;
-  max-height: 600px;
-  max-width: 600px;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .end-options {
@@ -960,25 +981,34 @@ a:hover.end-option h3{
 }
 
 .two-column-container, .three-column-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-row-gap: 32px;
+  grid-column-gap: 32px;
 }
 
 .two-column-container {
   width: 65%;
+  grid-template-columns: 1fr 1fr;
 }
 
 .three-column-container {
   width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
-.two-column-container .item, 
-.three-column-container .item, 
-.person-image .item {
-  width: 22vw;
-  margin-bottom: 32px;
+.two-column-container.border-top .item, .three-column-container.border-top .item {
+  padding-top: 20px;
+  border-top: solid 2px #000;
+}
+
+.three-column-container h2 {
+  margin-bottom: 16px;
+}
+
+.item .item-emoji {
+  height: 24px;
+  margin-right: 16px;
 }
 
 .image-social-container {
@@ -1253,6 +1283,12 @@ a:hover.end-option h3{
   margin-right: 10px;
 }
 
+.map {
+  width: 100%;
+  height: 550px;
+  margin-top: 48px;
+}
+
 .hromada-info {
   width: 100%;
   margin-top: 64px;
@@ -1484,6 +1520,10 @@ footer .partner-logos {
     padding: 64px 6.25% 64px 6.25%;
   }
 
+  .council-white {
+    padding: 64px 16px 64px 6%;
+  }
+
   .two-column-container .item, 
   .three-column-container .item,
   .person-image .item {
@@ -1590,8 +1630,9 @@ footer .partner-logos {
   }
   
   .council-colored {
-    padding: 164px 3.4% 112px;
+    padding: 152px 3.4% 112px;
   }
+  
 
   .council .black-button {
     width: 100%;
@@ -1617,8 +1658,8 @@ footer .partner-logos {
     flex-direction: column;
   }
   
-  .three-column-container .item {
-    width: 42vw;
+  .three-column-container {
+    grid-template-columns: 1fr 1fr;
   }
 
   .three-column-container .item .image-social-container > img {
@@ -1837,9 +1878,8 @@ footer .partner-logos {
     width: 100%;
   }
 
-  .council-colored {
+  .council-colored, .council-colored.no-padding {
     width: 100%;
-    height: 200px;
     padding: 24px 4% 48px;
   }
 
@@ -1869,8 +1909,9 @@ footer .partner-logos {
 
   /* page styles start */
 
-  .two-column-container {
+  .three-column-container, .two-column-container {
     width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .person-image {
@@ -1924,6 +1965,11 @@ footer .partner-logos {
 
   .paging .page-button p {
     display: none;
+  }
+
+  .map {
+    height: 350px;
+    margin-top: 24px;
   }
 
   .hromada-info {
