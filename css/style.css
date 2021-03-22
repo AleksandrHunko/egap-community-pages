@@ -1127,10 +1127,20 @@ a:hover.end-option h3{
   align-items: center;
 }
 
+.two-one-container .one-column > p,
+.two-one-container .one-column > a,
+.two-one-container .one-column > h4,
+.two-one-container .two-column > p,
+.two-one-container .two-column > a,
+.two-one-container .two-column > h4 {
+  margin-bottom: 16px;
+}
+
 .two-one-container .image {
-  width: 100%;
+  width: 90%;
+  margin: 0 5%;
   height: auto;
-  max-height: 500px;
+  max-height: 450px;
 }
 
 .two-one-container .full-size-image {
@@ -2178,8 +2188,12 @@ footer .partner-logos {
     height: 200px;
   }
 
-  .two-one-container.stretch .one-column > *,
-  .two-one-container.stretch .two-column > * {
+  .two-one-container.stretch .one-column > p,
+  .two-one-container.stretch .one-column > a,
+  .two-one-container.stretch .one-column > h4,
+  .two-one-container.stretch .two-column > p,
+  .two-one-container.stretch .two-column > a,
+  .two-one-container.stretch .two-column > h4 {
     margin-bottom: 16px;
   }
 
