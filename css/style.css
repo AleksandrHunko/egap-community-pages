@@ -1081,14 +1081,27 @@ a:hover.end-option h3{
 
 .two-one-container {
   width: 100%;
+  margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
 
+.two-one-container.no-margin-top {
+  margin-top: 0;
+}
+
+.two-one-container .black-button {
+  width: 80%;
+}
+
 .two-one-container.reverse {
   flex-direction: row-reverse;
+}
+
+.two-one-container.stretch {
+  align-items: stretch;
 }
 
 .two-one-container .one-column {
@@ -1096,7 +1109,39 @@ a:hover.end-option h3{
 }
 
 .two-one-container .two-column {
-  width: 66%;
+  width: 65%;
+}
+
+.two-one-container.stretch .one-column,
+.two-one-container.stretch .two-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-one-container.stretch .one-column .location-coords,
+.two-one-container.stretch .two-column .location-coords {
+  display: flex;
+  justify-content: space-between;
+  width: 210px;
+  align-items: center;
+}
+
+.two-one-container .image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+}
+
+.two-one-container .full-size-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.locations-item .one-column {
+  padding-top: 24px;
+  border-top: solid 2px #000;
 }
 
 .page-select {
@@ -2110,6 +2155,7 @@ footer .partner-logos {
 
   .two-one-container {
     flex-direction: column;
+    margin-top: 24px;
   }
   
   .two-one-container .one-column {
@@ -2118,6 +2164,33 @@ footer .partner-logos {
   
   .two-one-container .two-column {
     width: 100%;
+  }
+
+  .two-one-container .black-button {
+    width: 100%;
+  }
+
+  .two-one-container .image {
+    max-height: 300px;
+  }
+
+  .two-one-container .full-size-image {
+    height: 200px;
+  }
+
+  .two-one-container.stretch .one-column > *,
+  .two-one-container.stretch .two-column > * {
+    margin-bottom: 16px;
+  }
+
+  .locations-item .one-column {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .locations-item .two-column {
+    padding-top: 24px;
+    border-top: solid 2px #000;
   }
 
   .mobile-one-top {
