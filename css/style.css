@@ -216,7 +216,7 @@ select option {
 }
 
 .short-input {
-  width: 45%;
+  width: 70%;
 }
 
 .long-input {
@@ -713,6 +713,20 @@ section.colored {
   justify-content: space-between;
 }
 
+.colored-container {
+  background-color: #E7EEF3;
+  padding: 48px 0;
+  width: 100%;
+}
+
+.color-style-1 .colored-container {
+  background-color: #E7EEF3;
+}
+
+.color-style-2 .colored-container {
+  background-color: #E6EBE6;
+}
+
 .section-news .news-block {
   width: 100%;
   display: flex;
@@ -1065,6 +1079,26 @@ a:hover.end-option h3{
   background-position: top right;
 }
 
+.two-one-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.two-one-container.reverse {
+  flex-direction: row-reverse;
+}
+
+.two-one-container .one-column {
+  width: 33%;
+}
+
+.two-one-container .two-column {
+  width: 66%;
+}
+
 .page-select {
   display: flex;
   width: 180px;
@@ -1300,6 +1334,11 @@ a:hover.end-option h3{
   border-bottom: solid 2px #000;
 }
 
+.hromada-info.reset-margins {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 .hromada-info-text {
   margin-top: 48px;
   width: 33%;
@@ -1379,11 +1418,41 @@ a:hover.end-option h3{
   margin: 0 0 24px 48px;
 }
 
+.menu-content .content-entry {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 48px;
+  grid-column-gap: 32px;
+  margin: 0 0 24px 48px;
+}
+
 .accordion-menu-content .content-entry a {
-  padding-bottom: 2px;
   border-bottom: solid 1px #fff;
 }
 
+.menu-content .content-entry a {
+  padding-bottom: 2px;
+  border-bottom: solid 2px #000;
+}
+
+.arrow-link {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-link img {
+  margin-right: 10%;
+  transition: all 0.2s ease-in-out;
+}
+
+.arrow-link:hover img {
+  margin-right: 0;
+  margin-left: 10%;
+  transition: all 0.2s ease-in-out;
+}
 
 /* page styles end */
 
@@ -1691,12 +1760,21 @@ footer .partner-logos {
     line-height: 16px;
   }
 
+  .short-input {
+    width: 100%;
+  }
+
 
   /* Typography start */
 
   h1 {
     font-size: 32px;
     line-height: 36px;
+  }
+
+  .small {
+    font-size: 13px;
+    line-height: 18px;
   }
   /* Typography end */
 
@@ -2020,6 +2098,42 @@ footer .partner-logos {
     width: 100%;
     grid-column-gap: 24px;
     margin: 0 0 24px 0;
+  }
+
+  .menu-content .content-entry {
+    width: 100%;
+    margin: 0 0 24px 0;
+    padding: 0 8px;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 16px;
+  }
+
+  .two-one-container {
+    flex-direction: column;
+  }
+  
+  .two-one-container .one-column {
+    width: 100%;
+  }
+  
+  .two-one-container .two-column {
+    width: 100%;
+  }
+
+  .mobile-one-top {
+    flex-direction: column-reverse;
+  }
+
+  .mobile-two-top {
+    flex-direction: column;
+  }
+
+  .mobile-one-top .one-column {
+    margin-bottom: 32px;
+  }
+
+  .mobile-two-top .two-column {
+    margin-bottom: 32px;
   }
 
   /* page styles end */
