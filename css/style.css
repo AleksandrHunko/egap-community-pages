@@ -118,6 +118,7 @@ select option {
   padding-right: 25px;
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 .stylyzed-textarea textarea {
@@ -130,7 +131,7 @@ select option {
   outline: none;
 }
 
-.stylyzed-input input:focus + label .input-span, .stylyzed-input input:valid + label .input-span {
+.stylyzed-input input:focus + label .input-span, .stylyzed-input input.valid + label .input-span {
   transform: translateY(-170%);
   font-size: 12px;
 }
@@ -140,7 +141,7 @@ select option {
   font-size: 12px;
 }
 
-.stylyzed-input input:focus + label::after, .stylyzed-input input:valid + label::after,
+.stylyzed-input input:focus + label::after, .stylyzed-input input.valid + label::after,
 .stylyzed-textarea textarea:focus + label::after, .stylyzed-textarea textarea:valid + label::after {
   transform: translateX(0%)
 } 
@@ -495,8 +496,25 @@ header.colored {
 }
 
 .color-style-2 header.colored {
-  background-color: #E6EBE6;
+  background-color: #D7F64D33;
 }
+
+.color-style-3 header.colored {
+  background-color: #04C65D33;
+}
+
+.color-style-4 header.colored {
+  background-color: #007EFF33;
+}
+
+.color-style-5 header.colored {
+  background-color: #5B5AFF33;
+}
+
+.color-style-6 header.colored {
+  background-color: #FF831A33;
+}
+
 
 .header-img {
   width: 100%;
@@ -564,7 +582,23 @@ section.colored {
 }
 
 .color-style-2 section.colored {
-  background-color: #E6EBE6;
+  background-color: #D7F64D33;
+}
+
+.color-style-3 section.colored {
+  background-color: #04C65D33;
+}
+
+.color-style-4 section.colored {
+  background-color: #007EFF33;
+}
+
+.color-style-5 section.colored {
+  background-color: #5B5AFF33;
+}
+
+.color-style-6 section.colored {
+  background-color: #FF831A33;
 }
 
 .section-events .events {
@@ -715,7 +749,7 @@ section.colored {
 
 .colored-container {
   background-color: #E7EEF3;
-  padding: 48px 0;
+  padding: 48px 32px;
   width: 100%;
 }
 
@@ -724,7 +758,23 @@ section.colored {
 }
 
 .color-style-2 .colored-container {
-  background-color: #E6EBE6;
+  background-color: #D7F64D33;
+}
+
+.color-style-3 .colored-container {
+  background-color: #04C65D33;
+}
+
+.color-style-4 .colored-container {
+  background-color: #007EFF33;
+}
+
+.color-style-5 .colored-container {
+  background-color: #5B5AFF33;
+}
+
+.color-style-6 .colored-container {
+  background-color: #FF831A33;
 }
 
 .section-news .news-block {
@@ -882,7 +932,23 @@ section.colored {
 }
 
 .color-style-2 .council-white.colored {
-  background-color: #E6EBE6;
+  background-color: #D7F64D33;
+}
+
+.color-style-3 .council-white.colored {
+  background-color: #04C65D33;
+}
+
+.color-style-4 .council-white.colored {
+  background-color: #007EFF33;
+}
+
+.color-style-5 .council-white.colored {
+  background-color: #5B5AFF33;
+}
+
+.color-style-6 .council-white.colored {
+  background-color: #FF831A33;
 }
 
 
@@ -895,6 +961,30 @@ section.colored {
   background: #E7EEF380;
 }
 
+.color-style-1 .council-colored {
+  background-color: #E7EEF380;
+}
+
+.color-style-2 .council-colored {
+  background-color: #D7F64D1A;
+}
+
+.color-style-3 .council-colored {
+  background-color: #04C65D1A;
+}
+
+.color-style-4 .council-colored {
+  background-color: #007EFF1A;
+}
+
+.color-style-5 .council-colored {
+  background-color: #5B5AFF1A;
+}
+
+.color-style-6 .council-colored {
+  background-color: #FF831A1A;
+}
+
 .council-colored.no-padding {
   padding: 64px 3.4% 112px;
   justify-content: flex-start;
@@ -902,14 +992,6 @@ section.colored {
 
 .council-colored.no-padding > div {
   margin-top: 48px;
-}
-
-.color-style-1 .council-colored {
-  background: #E7EEF380;
-}
-
-.color-style-2 .council-colored {
-  background: #E6EBE680;
 }
 
 .council-items {
@@ -1416,6 +1498,14 @@ a:hover.end-option h3{
   height: 450px;
 }
 
+.invest-pasport-text {
+  padding: 32px 5% 0 5%;
+}
+
+.invest-pasport-text h5 {
+  margin-bottom: 16px;
+}
+
 .accordion-menu-level-1, .accordion-menu-level-2 {
   max-height: 130px;
   overflow: hidden;
@@ -1508,6 +1598,61 @@ a:hover.end-option h3{
   margin-left: 10%;
   transition: all 0.2s ease-in-out;
 }
+
+.edem-block-top {
+  margin-bottom: 48px;
+}
+
+.edem-block-top h4 {
+  margin-bottom: 48px;
+}
+
+.edem-block-top p {
+  margin-bottom: 24px;
+}
+
+.edem-block-right {
+  width: 100%;
+  padding: 32px 32px 48px 32px;
+  background-color: #E7EEF3;
+  position: sticky;
+  top: 0;
+}
+
+.edem-block-right img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 96px;
+}
+
+.edem-block-right .black-button {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.edem-block-bottom {
+  background-color: #E7EEF3;
+  margin-left: -32px;
+  padding: 64px 0 64px 32px;
+}
+
+.edem-block-bottom > div {
+  align-items: stretch;
+}
+
+.edem-block-bottom img {
+  width: 15%;
+}
+
+.edem-block-bottom .edem-block-bottom-steps {
+  width: 70%;
+  padding: 48px 40% 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 
 /* page styles end */
 
@@ -2042,6 +2187,10 @@ footer .partner-logos {
 
   /* page styles start */
 
+  .colored-container {
+    padding: 24px 16px;
+  }
+
   .three-column-container, .two-column-container {
     width: 100%;
     grid-template-columns: 1fr;
@@ -2122,6 +2271,10 @@ footer .partner-logos {
     height: 300px;
   }
 
+  .invest-pasport-text {
+    padding: 0;
+  }
+
   .accordion-menu-level-1, .accordion-menu-level-2 {
     max-height: 76px;
   }
@@ -2185,7 +2338,7 @@ footer .partner-logos {
   }
 
   .two-one-container .full-size-image {
-    height: 200px;
+    height: 250px;
   }
 
   .two-one-container.stretch .one-column > p,
