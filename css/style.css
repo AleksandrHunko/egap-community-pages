@@ -1013,7 +1013,7 @@ section.colored {
   margin-bottom: 16px;
 }
 
-.council-colored.no-padding > .black-button {
+.council-colored.no-padding .black-button {
   margin: 16px 0;
 }
 
