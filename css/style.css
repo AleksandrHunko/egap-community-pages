@@ -564,6 +564,16 @@ section > a {
   transition: all 0.2s ease-in-out;
 }
 
+#edem-section > a {
+  margin-top: 0;
+  margin-left: calc(64% - 180px);
+}
+
+section > a.large {
+  width: 200px;
+}
+
+
 section > a.link-show-mobile {
   display: none;
 }
@@ -571,6 +581,10 @@ section > a.link-show-mobile {
 section > a:hover {
   text-decoration: underline;
   width: 180px;
+}
+
+section > a.large:hover {
+  width: 220px;
 }
 
 section.colored {
@@ -994,6 +1008,14 @@ section.colored {
   margin-top: 48px;
 }
 
+.council-colored.no-padding > div > h4{
+  margin-bottom: 16px;
+}
+
+.council-colored.no-padding > .black-button {
+  margin: 16px 0;
+}
+
 .council-items {
   display: flex;
   width: 100%;
@@ -1405,6 +1427,65 @@ a:hover.end-option h3{
   text-decoration: underline;
   width: 180px;
 }
+
+.edem-container .item {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: solid 2px #000;
+  border-bottom: solid 2px #000;
+  margin-bottom: 48px;
+}
+
+.edem-container .item::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  border-bottom: solid 7px red;
+}
+
+.edem-container .item::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: -4px;
+  border-bottom: solid 7px red;
+}
+
+.edem-container .item.width-25::after {
+  width: 25%;
+}
+
+.edem-container .item.width-50::after {
+  width: 50%;
+}
+
+.edem-container .item.width-75::after {
+  width: 75%;
+}
+
+.edem-container .item.width-100::after {
+  width: 100%;
+}
+
+.edem-container .item h4 {
+  margin-bottom: 48px;
+}
+
+.edem-live {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: -48px;
+}
+
+.edem-live .red {
+  display: inline;
+  margin: 0 24px 0 8px;
+  color: #FF1717;
+}
+
+
 
 
 .paging {
@@ -2047,6 +2128,10 @@ footer .partner-logos {
     width: 140px;
   }
 
+  #edem-section > a {
+    margin-left: 0;
+  }
+
   section > a.link-show-mobile {
     display: flex;
     margin-top: 24px;
@@ -2374,6 +2459,10 @@ footer .partner-logos {
 
   .mobile-two-top .two-column {
     margin-bottom: 32px;
+  }
+
+  .edem-live {
+    margin-bottom: -24px;
   }
 
   /* page styles end */
