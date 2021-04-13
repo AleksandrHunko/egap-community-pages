@@ -3,9 +3,9 @@ window.addEventListener('load', function () {
 
   const elemArr = document.getElementsByClassName('accordion-menu-content')
   for (let i = 0; i < elemArr.length; i++) {
-    elemArr[i].addEventListener('click', function() {
+    elemArr[i].querySelector('h4').addEventListener('click', function() {
       
-      this.parentElement.classList.toggle('open')
+      this.parentElement.parentElement.classList.toggle('open')
 
     })
   }
