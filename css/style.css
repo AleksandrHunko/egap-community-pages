@@ -2466,7 +2466,9 @@ footer .partner-logos {
   }
   
   .accordion-menu-level-1.open > .accordion-menu-content,
-  .accordion-menu-level-2.open > .accordion-menu-content {
+  .accordion-menu-level-2.open > .accordion-menu-content,
+  .accordion-menu-level-1.white.open > .accordion-menu-content,
+  .accordion-menu-level-2.white.open > .accordion-menu-content {
     padding: 24px 12px;
     background-position: top 34px right 8px;
   }
