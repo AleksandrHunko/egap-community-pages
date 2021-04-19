@@ -1151,7 +1151,8 @@ a:hover.end-option h3{
   border-top: solid 2px #000;
 }
 
-.three-column-container h2 {
+.three-column-container h2, .three-column-container p, .three-column-container a {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -1223,6 +1224,10 @@ a:hover.end-option h3{
   align-items: flex-start;
 }
 
+.two-one-container.border {
+  border: solid 2px #000
+}
+
 .two-one-container.no-margin-top {
   margin-top: 0;
 }
@@ -1243,8 +1248,18 @@ a:hover.end-option h3{
   width: 33%;
 }
 
+
+.two-one-container.border.reverse .one-column  {
+  padding: 16px;
+  border-right: solid 2px #000
+}
+
 .two-one-container .two-column {
   width: 65%;
+}
+
+.two-one-container.border .two-column  {
+  padding: 16px;
 }
 
 .two-one-container.stretch .one-column,
@@ -1918,6 +1933,26 @@ a:hover.end-option h3{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+}
+
+.image-row > div {
+  width: 46%;
+}
+
+.image-row > div img {
+  width: 100%;
+  height: auto;
+}
+
+.image-row > div p {
+  margin-top: 16px;
 }
 
 
@@ -2666,11 +2701,11 @@ footer .partner-logos {
     border-top: solid 2px #000;
   }
 
-  .mobile-one-top {
+  .two-one-container.mobile-one-top {
     flex-direction: column-reverse;
   }
 
-  .mobile-two-top {
+  .two-one-container.mobile-two-top {
     flex-direction: column;
   }
 
@@ -2680,6 +2715,11 @@ footer .partner-logos {
 
   .mobile-two-top .two-column {
     margin-bottom: 32px;
+  }
+
+  .two-one-container.border .one-column {
+    border-right: none;
+    border-bottom: solid 2px #000;
   }
 
   .edem-live {
