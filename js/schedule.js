@@ -56,7 +56,9 @@ window.addEventListener('load', function () {
 
   for (let i = 0; i < schedule.length; i++) {
     const institution = document.getElementById(`institution-${schedule[i].id}`)
-    institution.querySelector('.schedule').innerHTML = parseSchedule(schedule[i].schedule)
+    try {
+      institution.querySelector('.schedule').innerHTML = parseSchedule(schedule[i].schedule)
+    } catch(err) {}
   }
 
   const elemArr = document.getElementsByClassName('schedule-accordion')
