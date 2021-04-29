@@ -833,6 +833,10 @@ section.colored {
   flex-wrap: wrap;
 }
 
+.news-block a {
+  border-bottom: solid 1px #000;
+}
+
 .section-news .news-item {
   width: 32%;
   display: flex;
