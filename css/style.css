@@ -561,8 +561,8 @@ header.colored,
 }
 
 .header-title img {
-  max-width: 180px;
-  max-height: 180px;
+  max-width: 200px;
+  max-height: 150px;
   margin-bottom: 16px;
 }
 
@@ -833,7 +833,7 @@ section.colored {
   flex-wrap: wrap;
 }
 
-.news-block a {
+е.news-block a {
   border-bottom: solid 1px #000;
 }
 
@@ -1967,66 +1967,96 @@ a:hover.end-option h3{
 /* footer start */
 
 footer {
-  padding: 80px 15% 112px 15%;
+  padding: 80px 15%;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   background-color: #000;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.footer-left, .footer-right {
-  width: 40%;
+footer > div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer-contacts {
-  margin: 20px 0;
 }
 
 footer .partner-logos {
+  margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.partner-logo img {
+  max-width: 48px;
+  width: auto;
+  max-height: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+}
+
+.partner-logo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.partner-logo:last-child {
+  margin-bottom: 0;
+}
+
+.partner-logo p {
+  text-align: left;
+}
+
+footer .bot-links-section {
+  margin-top: 32px;
+}
+
+footer .bot-links {
   margin-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-wrap:wrap
 }
 
-.partner-logos img, .partner-logos svg {
+.bot-links img, .bot-links svg {
   margin-right: 20px;
   margin-bottom: 20px;
-  max-height: 80px;
+  max-height:80px
 }
 
 .social {
-  width: 320px;
-  margin-bottom: 48px;
- }
- 
- .social-icons {
+  width: 192px;
+}
+
+
+.social-icons {
    margin-top: 20px;
    width: 100%;
    display: flex;
    justify-content: flex-start;
- }
- 
- .social-icons svg,  .social-icons img {
+}
+
+.social-icons svg {
    width: auto;
-   margin-right: 10px;
-   height: 32px;
- }
- 
- svg:hover .stroke {
-   stroke: #42C385;
- }
- 
- svg:hover .fill {
-   fill: #42C385;
- }
+   height: 36px;
+   margin-right: 16px;
+}
+
+svg:hover .stroke {
+   stroke: #1BCFC4;
+}
+
+svg:hover .fill {
+   fill: #1BCFC4;
+}
 
 /* footer end */
 
@@ -2059,7 +2089,7 @@ footer .partner-logos {
   }
 
   footer {
-    padding: 80px 12% 112px 12%;
+    padding: 80px 12%;
   }
 }
 
@@ -2078,7 +2108,7 @@ footer .partner-logos {
   }
 
   footer {
-    padding: 80px 10% 112px 10%;
+    padding: 80px 10%;
   }
 }
 
@@ -2112,7 +2142,7 @@ footer .partner-logos {
     height: 27vw;
   }
   footer {
-    padding: 80px 6.25% 112px 6.25%;
+    padding: 64px 6.25%;
   }
 }
 
@@ -2735,44 +2765,27 @@ footer .partner-logos {
   /* footer start */
 
   footer {
-    padding: 24px 0 56px 0;
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    display: flex;
+    padding: 48px 4% 48px 4%;
     flex-direction: column;
   }
-  .footer-left, .footer-right {
-    width: 90%;
-  }
 
-  .footer-left > p {
-    margin-bottom: 16px;
-  }
-
-  .footer-right > p {
-    margin-top: 24px;
-    margin-bottom: 16px;
+  footer > div {
+    margin-bottom: 32px;
   }
 
   footer .partner-logos {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  footer .bot-links {
     margin-top: 16px;
-    flex-wrap: wrap;
-    
-  }
-  
-  .partner-logos img, .partner-logos svg {
+    flex-wrap:wrap
+}
+
+  .bot-links img, .bot-links svg {
     margin-right: 10px;
-    max-height: 60px;
-  }
-
-  .social {
-    width: 90%;
-    margin-bottom: 24px;
-  }
-
- .social-icons {
-     margin-top: 0;
+    max-height:  60px
   }
 
   /* footer end */
