@@ -30,4 +30,20 @@ window.addEventListener('load', function () {
       })
     }
   }
+
+  if (document.cookie.split('; ').find(row => row.startsWith('enable-contrast'))) {
+    document.querySelector('body').classList.toggle('contrast-enable')
+    document.querySelector('.accessibility').querySelector('p').innerHTML = 'Стандартна версія'
+  } 
+
+  document.querySelector('.accessibility').addEventListener('click', () => {
+    document.querySelector('body').classList.toggle('contrast-enable')
+    if(document.querySelector('body').classList.contains('contrast-enable')) {
+      document.querySelector('.accessibility').querySelector('p').innerHTML = 'Стандартна версія'
+      document.cookie = "enable-contrast=true; path=/;";
+    } else {
+      document.querySelector('.accessibility').querySelector('p').innerHTML = 'Людям із порушенням зору'
+      document.cookie = "enable-contrast=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+  })
 })
