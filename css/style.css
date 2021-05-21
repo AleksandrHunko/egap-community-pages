@@ -491,6 +491,29 @@ nav {
   border: none;
 }
 
+.accessibility {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  cursor: pointer;
+}
+
+.accessibility img {
+  height: 60%;
+  width: auto;
+}
+
+.accessibility p {
+  margin-left: 8px;
+  font-size: 13px;
+  line-height: 18px;
+  width: 140px;
+}
+
+.accessibility:hover p {
+  text-decoration: underline;
+}
+
 /* nav end */
 
 
@@ -2143,6 +2166,34 @@ svg:hover .fill {
 .show-mobile {
   display: none !important;
 }
+
+
+/* accessibility features */
+
+.contrast-enable .header-img img {
+  display: none;
+}
+
+.contrast-enable .colored,
+.contrast-enable section.colored,
+.contrast-enable header.colored {
+  background-color: #eee;
+}
+
+.contrast-enable img {
+  filter: grayscale(100%);
+}
+
+.contrast-enable .council-colored {
+  background-color: #efefef;
+}
+
+.contrast-enable .black-button:hover {
+  background: #fff;
+  border: solid black 2px;
+}
+
+/* accessibility features end */
 
 /* media start */
 
