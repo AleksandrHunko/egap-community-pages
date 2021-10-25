@@ -280,7 +280,7 @@ h6 {
   font-weight: 300;
 }
 
-p {
+p, li {
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
@@ -856,8 +856,9 @@ section.colored {
   flex-wrap: wrap;
 }
 
-е.news-block a {
-  border-bottom: solid 1px #000;
+.news-block a {
+  color: rgb(2, 26, 160);
+  border-bottom: solid 1px rgb(2, 26, 160);
 }
 
 .section-news .news-item {
