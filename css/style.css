@@ -535,7 +535,7 @@ header.colored,
 
 .color-style-2 header.colored,
 .color-style-2 .colored {
-  background-color: #D7F64D33;
+  background-color: #f3f5ea33;
 }
 
 .color-style-3 header.colored,
@@ -856,10 +856,16 @@ section.colored {
   flex-wrap: wrap;
 }
 
-.news-block a {
+.news-block > a {
   color: rgb(2, 26, 160);
   border-bottom: solid 1px rgb(2, 26, 160);
 }
+
+.news-item .decisions-item-special a {
+  display: block;
+  width: 100%;
+}
+
 
 .section-news .news-item {
   width: 32%;
@@ -921,6 +927,7 @@ section.colored {
   background-position: top right;
 }
 
+
 .decisions-grid {
   margin-top: 48px;
   width: 100%;
@@ -929,6 +936,8 @@ section.colored {
   grid-row-gap: 20px;
   grid-column-gap: 40px;
 }
+
+
 
 .decisions-item {
   display: flex;
@@ -982,6 +991,14 @@ section.colored {
   display: flex;
   justify-content: space-between;
   width: 160px;
+}
+
+.two-columns-grid .decisions-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-columns-grid .decisions-item {
+  height: auto;
 }
 
 .section-council {
