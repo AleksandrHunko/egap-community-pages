@@ -1351,14 +1351,17 @@ a:hover.end-option h3{
 
 .page-select {
   display: flex;
-  width: 180px;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 40px;
 }
 
 .page-select a {
   padding-bottom: 5px;
   color: #888;
+}
+
+.page-select a, .page-select p {
+  margin-right: 20px;
 }
 
 .page-select a.active, .page-select a:hover {
