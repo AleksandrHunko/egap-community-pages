@@ -46,4 +46,17 @@ window.addEventListener('load', function () {
       document.cookie = "enable-contrast=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     }
   })
+
+  const closeButtons = document.querySelectorAll('.close')
+
+    for (let i = 0; i < closeButtons.length; i++) {
+        closeButtons[i].addEventListener('click', (thisButton) => {
+            thisButton.target.parentElement.classList.remove('active')
+        })
+    }
+
+    const searchIcon = document.querySelector('.search-icon')
+    searchIcon.addEventListener('click', (thisIcon) => {
+      thisIcon.target.parentElement.parentElement.querySelector('.search-window').classList.add('active')
+    })
 })
