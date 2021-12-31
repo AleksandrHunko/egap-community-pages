@@ -8,8 +8,277 @@
   <title>Document</title>
 </head>
 
-<body>
-  
+<body class="color-style-1">
+  <main>
+  <section>
+    <div class="breadcrumb">
+      <p><a href="/">Головна</a></p>
+      <p>Кабінет мешканця</p>
+    </div>
+    <h2>Кабінет мешканця</h2>
+    <div class="two-one-container mobile-two-top">
+        <div class="two-column">
+            <h4>Електронне звернення</h4>
+            <form>
+                <div class="short-input">
+                  <select class="black-select" name="institution">
+                    <option value="1" selected>Сільрада</option>
+                    <option value="1" selected>Сільрада</option>
+                  </select>
+                </div>
+                <br>
+                <div class="short-input">
+                    <select name="application_type" required="">
+                        <option value="" selected="">Оберіть тему</option>
+                        <option value="1">Звернення</option>
+                        <option value="2">Запит на публічну інформацію</option>
+                        <option value="3">Повідомлення про корупцію</option>
+                        <option value="4">Скарга</option>
+                    </select>
+                </div>
+                
+                <div class="stylyzed-input short-input">
+                    <input name="name" type="text" autocomplete="off" required="">
+                    <label class="input-label">
+                        <span class="input-span">ПІБ</span>
+                    </label>
+                </div>
+                <div class="stylyzed-input short-input">
+                    <input name="phone" type="tel" autocomplete="off" pattern="((\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4}))" required="">
+                    <label class="input-label">
+                        <span class="input-span">Номер телефону</span>
+                    </label>
+                </div>
+                <div class="stylyzed-input short-input">
+                    <input name="email" type="email" autocomplete="off" required="">
+                    <label class="input-label">
+                        <span class="input-span">Email</span>
+                    </label>
+                </div>
+                <div class="stylyzed-input short-input">
+                    <input name="index" type="text" autocomplete="off" required="">
+                    <label class="input-label">
+                        <span class="input-span">Індекс</span>
+                    </label>
+                </div>
+                <div class="stylyzed-input short-input">
+                    <input name="address" type="text" autocomplete="off" required="">
+                    <label class="input-label">
+                        <span class="input-span">Адреса</span>
+                    </label>
+                </div>
+                <div class="short-input">
+                    <select name="answer_type" required="">
+                        <option value="" selected="">Як надати відповідь?</option>
+                        <option value="1">Електронною поштою</option>
+                        <option value="2">Поштовим зв`язком</option>                        
+                    </select>
+                </div>
+                <div class="stylyzed-textarea short-input">
+                    <textarea name="text_message" type="text" autocomplete="off" required=""></textarea>
+                    <label class="input-label">
+                        <span class="input-span"></span>
+                    </label>
+                    <span class="textarea-span">текст звернення</span>
+                </div>
+                
+                <br>
+                <div class="captcha">
+                    <img src="https://myrnograd-rada.gov.ua/captcha/default?2tn9fWDV" alt="">
+                    <input type="text" name="captcha"><p></p>
+                </div>
+                <br>
+                <div>
+                	<br>
+					<input type="checkbox" value="1" id="allow" name="allow" checked="" required="">
+					<label for="allow">
+						Даю згоду на обробку персональних даних
+					</label>
+				</div>
+				<br>
+
+                <button type="submit" class="black-button" id="send_btn">Відправити</button>
+            </form>
+        </div>
+
+        <div class="one-column">
+            <h4>Структура</h4>
+
+                            <a href="/department/456" class="arrow-link">
+                    <p>Виконавчий комітет</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2072" class="arrow-link">
+                    <p>Відділ архітектури</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2070" class="arrow-link">
+                    <p>Відділ ведення держреєстру виб</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2069" class="arrow-link">
+                    <p>Відділ ведення Реєстру ТГ</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/761" class="arrow-link">
+                    <p>Відділ держ реєстрації</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/760" class="arrow-link">
+                    <p>Відділ економіки</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2067" class="arrow-link">
+                    <p>Відділ з діловодства</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2076" class="arrow-link">
+                    <p>Відділ з питань безпеки</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+                            <a href="/department/2609" class="arrow-link">
+                    <p>Відділ інноваційної політики</p>
+                    <img src="https://myrnograd-rada.gov.ua/images/subdomain/arrow-right.svg" alt="">
+                </a>
+        </div>
+
+    </div>
+</section>
+<section class="colored">
+  <h2>Моя влада</h2>
+        <div class="council-items three-column">
+            <div class="council-item">
+                <img src="./images/head.jpg" alt="">
+            </div>
+            <div class="council-item">
+                <h4>Кірченко Федір Леонидович</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a href=""><button class="black-button">Детальнiше</button></a>
+                <a href=""><button class="black-button">Записатись на прийом</button></a>
+            </div>
+            <div class="council-item">
+              <h4>Депутатський корпус</h4>
+              <p>25 депутатів</p>
+              <button class="black-button alternative">Депутатський корпус</button>
+              <button class="black-button alternative">Виконком</button>
+              <button class="black-button alternative">Сільська рада</button>
+          </div>
+
+</div>
+</section>
+<section class="section-news">
+  <h2>Державні послуги онлайн</h2>
+  <div class="news">
+    <div class="news-block four-column">
+            <div class="news-item">
+                <div class="image-container">
+                    <img src="./images/cabinet-1.jpg" alt="">
+                </div>
+                <div class="news-text">
+                    <a href="#"><h4>Реєстрація ФОП</h4></a>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="image-container">
+                    <img src="./images/cabinet-2.jpg" alt="">
+                </div>
+                <div class="news-text">
+                    <a href="#"><h4>Отримати сертифікат про вакцинацію</h4></a>
+                </div>
+            </div>
+            <div class="news-item">
+                <div class="image-container">
+                    <img src="./images/cabinet-3.jpg" alt="">
+                </div>
+                <div class="news-text">
+                    <a href="#"><h4>Довідка про доходи</h4></a>
+                </div>
+            </div>
+            <div class="news-item">
+              <div class="image-container">
+                  <img src="./images/cabinet-4.jpg" alt="">
+              </div>
+              <div class="news-text">
+                  <a href="#"><h4>Ємалятко</h4></a>
+              </div>
+          </div>
+    </div>
+</div>
+</section>
+<section class="colored">
+  <h2>Цифрова освіта онлайн</h2>
+  <div class="decisions-grid no-height grey-top">
+    <div class="decisions-item">
+      <div class="date">Пройти тестування</div>
+      <a href="#"><p>Цифрограм 1.0</p></a>
+      <br>
+      <a href="#"><p>Цифрограм 2.0</p></a>
+    </div>
+    <div class="decisions-item">
+      <div class="date">Взаємодія</div>
+      <a href="#"><p>Зірки е-демократії</p></a>
+      <br>
+      <a href="#"><p>Електронний підпис</p></a>
+      <br>
+      <a href="#"><p>Оплата комуналки </p></a>
+    </div>
+    <div class="decisions-item">
+      <div class="date">Цифрові навички</div>
+      <a href="#"><p>Базові цифрові навички. Сезон 1</p></a>
+      <br>
+      <a href="#"><p>Базові цифрові навички. Сезон 2</p></a>
+      <br>
+      <a href="#"><p>Базові цифрові навички. Сезон 3 </p></a>
+    </div>
+    <div class="decisions-item">
+      <div class="date">Безпека</div>
+      <a href="#"><p>Обережно, кібер-шахраї</p></a>
+      <br>
+      <a href="#"><p>Безпека дітей в інтернеті</p></a>
+      <br>
+      <a href="#"><p>Смартфон для батьків</p></a>
+    </div>
+
+  </div>
+</section>
+
+  <section class="section-services">
+    <h2>Інформація та сервіси</h2>
+    <div class="services-grid">
+        <div class="service-item-special colored">
+          <h4>Громада у смартфоні: підключитися до чат-боту СВОЇ</h4>
+            <img class="image-center" src="./images/svoi.png" alt="">
+          <div class="image-row">
+            <div>
+                <img style="margin-bottom: 0" src="./images/chatbot-1.svg" alt="">
+                <a href="viber://pa?chatURI=smartownbot&context=selectCommunity-11_jobs-subscribe"><p>Viber</p></a>
+            </div>
+            <div>
+                <img style="margin-bottom: 0" src="./images/chatbot-2.svg" alt="">
+                <a href="https://t.me/smart_town_bot?start=selectCommunity-11_jobs-subscribe"><p>Telegram</p></a>
+            </div>
+        </div>
+        </div>
+        <div class="service-item">
+            <a href="#"><h3>Громадський бюджету</h3></a>
+            <p>Кожен мешканець може запропонувати свою ініціативу, щоб спрямувати кошти на користь громади. А також голосувати за проєкти та слідкувати за розподіленням бюджету.</p>
+        </div>
+        <div class="service-item">
+            <a href="#"><h3>Петиції</h3></a>
+            <p>Єдина платформа місцевих петицій громади. Кожен житель може оформити ідею в електронному вигляді, а населення – підтримати ініціативу. Коли петиція набере необхідну кількість голосів, її розглянуть.</p>
+        </div>
+       
+        <div class="service-item">
+            <a href="#"><h3>Е-довідник закладів</h3></a>
+            <p>Дізнайтеся про адреси, графіки роботи та контактні дані комунальних закладів громади. На сторінці закладу можна оцінити його роботу за допомогою чатбота.</p>
+        </div>
+        <div class="service-item">
+            <a href="#"><h3>Відкрите місто</h3></a>
+            <p>Комунальні проблеми, аварії, порушення на карті громади.</p>
+        </div>
+    </div>
+</section>
+</main>
 </body>
 
 </html>
