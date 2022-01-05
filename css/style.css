@@ -2194,6 +2194,10 @@ a:hover.end-option h3{
   margin-top: 24px;
 }
 
+.hidden {
+  display: none;
+}
+
 .close {
   position: absolute;
   cursor: pointer;
@@ -2219,6 +2223,55 @@ a:hover.end-option h3{
 }
 .close:after {
   transform: rotate(-45deg);
+}
+
+
+.queue-block, .queue-schedule, .queue-continue-registration {
+  margin-top: 32px;
+  width: 100%;
+}
+
+.weekdays {
+  margin: 16px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.weekdays .item {
+  margin-right: 8px;
+}
+
+.days-grid {
+  margin: 16px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.days-grid .item {
+  background-color: #eee;
+  height: 96px;
+  display: flex;
+  padding: 42px 0;
+  justify-content: center;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.days-grid .item.active {
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(2, 26, 160);
+}
+
+.days-grid .item.active:hover {
+  background-color: rgb(39, 62, 190);
+}
+
+
+.time-grid .item:hover {
+  background-color: #eee
 }
 
 
