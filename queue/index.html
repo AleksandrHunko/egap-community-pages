@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="color-style-10">
+  <nav>
+    <a href="" class="nav-logo">
+      <img src="./images/logo.svg" alt="">
+      <p class="hide-mobile">Дія.Цифрова Громада</p>
+    </a>
+    <div class="accessibility">
+      <img src="./images/vision-icon.svg" alt="">
+      <p>Людям із порушенням зору</p>
+  </div>
+    <div class="nav-menu">
+      <a href="/" class="nav-elem  "><span>Головна</span></a>
+      <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+      <a href="#" class="nav-elem underline"><span>Новини</span></a>
+      <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+      <a href="#" class="nav-elem underline"><span>Голова громади</span></a>
+    </div>
+    <div class="show-mobile" id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu-wrapper">
+        <div id="menu">
+          <div class="menu-top">
+            <div class="nav-logo show-mobile">
+              <img src="./images/logo.svg" alt="">
+            </div>
+          </div>
+          <div class="nav-menu-mobile">
+            <a href="/" class="nav-elem underline"><span>Головна</span></a>
+            <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+            <a href="#" class="nav-elem underline"><span>Новини</span></a>
+            <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+            <a href="#" class="nav-elem underline"><span>Голова громади</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="colored">
+    <div class="header-content">
+      <div class="header-img">
+        <img src="./images/header-image.jpg" alt="">
+      </div>
+      <div class="header-title">
+        <img src="./images/Gerb_Zymne.png" alt="">
+        <h1>Зимнівська громада</h1>
+        <p>Волинська область, Володимир-Волинський район</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="breadcrumb">
+        <p><a href="/">Головна</a></p>
+        <p>Електронна черга</p>
+        <p>Муніципалітет</p>
+      </div>
+      <h2>Записатися в чергу</h2>
+      <br>
+      <br>
+      <h4>1. Оберіть послугу</h4>
+      <br>
+      <div class="short-input">
+        <select name="type" id="queue-type">
+          <option disabled selected>Оберіть послугу</option>
+          <option value="1">Всі послуги</option>
+          <option value="2">Всі послуги</option>
+          <option value="3">Всі послуги</option>
+        </select>
+      </div>
+      <div class="queue-block hidden">
+        <h4>2. Оберіть день</h4>
+
+        <div class="weekdays">
+          <div class="item">Пн</div>
+          <div class="item">Вт</div>
+          <div class="item">Ср</div>
+          <div class="item">Чт</div>
+          <div class="item">Пт</div>
+          <div class="item">Сб</div>
+          <div class="item">Нд</div>
+        </div>
+        <div class="days-grid">
+        </div>
+      </div>
+      <div class="queue-schedule hidden">
+        <h4>3. Оберіть час прийому</h4>
+        <br>
+        <div class="short-input">
+        <select class="times-grid" id="time-select">
+          <option value="" disabled selected>Оберіть час</option>
+          <option value="09:00">09:00</option>
+          <option value="09:30">09:30</option>
+          <option value="10:00">10:00</option>
+          <option value="10:30">10:30</option>
+          <option value="11:00">11:00</option>
+          <option value="11:30">11:30</option>
+          <option value="12:00">12:00</option>
+          <option value="12:30">12:30</option>
+          <option value="13:00">13:00</option>
+          <option value="13:30">13:30</option>
+          <option value="14:00">14:00</option>
+          <option value="14:30">14:30</option>
+          <option value="15:00">15:00</option>
+          <option value="15:30">15:30</option>
+          <option value="16:00">16:00</option>
+          <option value="16:30">16:30</option>
+          <option value="17:00">17:00</option>
+          <option value="17:30">17:30</option>
+        </select>
+        </div>
+      </div>
+      <div class="queue-continue-registration hidden">
+        <button id='queue-button' class="black-button">Записатися</button>
+      </div>
+    </section>
+  </main>
+  <script src="./js/queue.js"></script>
+</body>
+
+</html>

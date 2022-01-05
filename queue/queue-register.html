@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+
+<body class="color-style-10">
+  <nav>
+    <a href="" class="nav-logo">
+      <img src="./images/logo.svg" alt="">
+      <p class="hide-mobile">Дія.Цифрова Громада</p>
+    </a>
+    <div class="accessibility">
+      <img src="./images/vision-icon.svg" alt="">
+      <p>Людям із порушенням зору</p>
+    </div>
+    <div class="nav-menu">
+      <a href="/" class="nav-elem  "><span>Головна</span></a>
+      <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+      <a href="#" class="nav-elem underline"><span>Новини</span></a>
+      <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+      <a href="#" class="nav-elem underline"><span>Голова громади</span></a>
+    </div>
+    <div class="show-mobile" id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <div class="menu-wrapper">
+        <div id="menu">
+          <div class="menu-top">
+            <div class="nav-logo show-mobile">
+              <img src="./images/logo.svg" alt="">
+            </div>
+          </div>
+          <div class="nav-menu-mobile">
+            <a href="/" class="nav-elem underline"><span>Головна</span></a>
+            <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+            <a href="#" class="nav-elem underline"><span>Новини</span></a>
+            <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+            <a href="#" class="nav-elem underline"><span>Голова громади</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="colored">
+    <div class="header-content">
+      <div class="header-img">
+        <img src="./images/header-image.jpg" alt="">
+      </div>
+      <div class="header-title">
+        <img src="./images/Gerb_Zymne.png" alt="">
+        <h1>Зимнівська громада</h1>
+        <p>Волинська область, Володимир-Волинський район</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="breadcrumb">
+        <p><a href="/">Головна</a></p>
+        <p>Електронна черга</p>
+        <p>Муніципалітет</p>
+      </div>
+      <h2>Реєстрація в чергу</h2>
+      <br>
+      <div class="queue-content">
+        <div class="day"></div>
+        <div class="time"></div>
+      </div>
+      <br>
+      <p>УВАГА! Ви забронювали місце в черзі. Якщо Ви не зареєструєтеся протягом 30 хвилин, місце може бути втрачено.
+      </p>
+      <br>
+        <div class="stylyzed-input short-input">
+          <input name="name" type="text" autocomplete="off" required="">
+          <label class="input-label">
+            <span class="input-span">ПІБ</span>
+          </label>
+        </div>
+        <div class="stylyzed-input short-input">
+          <input name="tel" type="tel" autocomplete="off"
+            pattern="((\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4}))" required="">
+          <label class="input-label">
+            <span class="input-span">Номер телефону</span>
+          </label>
+        </div>
+        <div class="stylyzed-input short-input">
+          <input name="email" type="email" autocomplete="off" required="">
+          <label class="input-label">
+            <span class="input-span">Email</span>
+          </label>
+        </div>
+        <input type="checkbox" value="1" id="allow" name="allow" checked="" required="">
+        <label for="allow">
+          Даю згоду на обробку персональних даних
+        </label>
+        <br>
+        <button id="queue-button" style="display:block; margin-top: 24px;" class="black-button">Відправити</button>
+
+
+    </section>
+  </main>
+  <script src="./js/queue2.js"></script>
+</body>
+
+</html>
