@@ -1556,7 +1556,7 @@ a:hover.end-option h3{
 }
 
 .schedule-accordion.open {
-  max-height: 10000px;
+  max-height: 25000px;
   transition: max-height 1s ease-in-out;
 }
 
@@ -2267,6 +2267,10 @@ a:hover.end-option h3{
 
 .days-grid .item.active:hover {
   background-color: rgb(39, 62, 190);
+}
+
+.days-grid .item.active.selected {
+  background-color: rgb(90, 110, 222);
 }
 
 
