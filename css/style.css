@@ -682,6 +682,7 @@ section.colored {
   display: flex;
   width: 100%;
   margin-top: 8px;
+  margin-bottom: 20px;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -866,6 +867,11 @@ section.colored {
 }
 
 .news-block > a {
+  color: rgb(2, 26, 160);
+  border-bottom: solid 1px rgb(2, 26, 160);
+}
+
+.news-block > p a {
   color: rgb(2, 26, 160);
   border-bottom: solid 1px rgb(2, 26, 160);
 }
@@ -2324,6 +2330,55 @@ a:hover.end-option h3{
 /* page styles end */
 
 
+/* cnap page styles start */
+
+header.alternative h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+header.alternative .header-title {
+  position: relative;
+}
+
+header.alternative .bubble-text {
+  position: absolute;
+  right: 30%;
+  top: 35%;
+  width: 185px;
+  padding: 16px 12px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: end;
+}
+
+.news-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-top h2 {
+  max-width: 75%;
+}
+
+
+.news-top > div {
+  display: flex;
+  height: 60px;
+  max-width: 20%;
+}
+
+.news-top > div img {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  width: auto;
+}
+
+
+/* cnap page styles end */
+
+
 /* footer start */
 
 footer {
@@ -2495,6 +2550,14 @@ svg:hover .fill {
     padding: 64px 10% 64px 10%;
   }
 
+  /* cnap page styles start */
+
+  header.alternative .bubble-text {
+    right: 22%;
+  }
+
+  /* cnap page styles start */
+
   footer {
     padding: 80px 10%;
   }
@@ -2661,6 +2724,10 @@ svg:hover .fill {
     flex-direction: column;
   }
 
+  .four-column.news-block .news-item {
+    width: 48%;
+  }
+
   .team-image > img {
     width: 22vw;
     height: 22vw;
@@ -2698,6 +2765,14 @@ svg:hover .fill {
   }
 
   /* page styles end */
+
+  /* cnap page styles start */
+
+  .news-top > div {
+    height: 40px;
+  }
+  
+  /* cnap page styles end */
 
 }
 
@@ -2781,6 +2856,10 @@ svg:hover .fill {
     max-width: 100%;
     max-height: 200px;
     margin: auto;
+  }
+
+  .accessibility {
+    display: none;
   }
 
   /* header end */
@@ -2980,6 +3059,10 @@ svg:hover .fill {
 
   .section-all-news .news, .section-rishennya .news {
     flex-direction: column-reverse;
+  }
+
+  .four-column.news-block .news-item {
+    width: 95%;
   }
 
   .news-tags {
@@ -3230,6 +3313,18 @@ svg:hover .fill {
   }
 
   /* page styles end */
+
+  /* cnap page styles start */
+
+  header.alternative .bubble-text {
+    display: none;
+  }
+
+  .news-top > div {
+    flex-direction: column;
+  }
+
+  /* cnap page styles start */
 
   /* footer start */
 
