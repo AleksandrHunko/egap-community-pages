@@ -2375,6 +2375,30 @@ header.alternative .bubble-text {
   width: auto;
 }
 
+.news-with-tag {
+  display: flex;
+  align-items: flex-end;
+}
+
+.news-with-tag .tag {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMyAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOC4wOTcyOCA4LjEyOTI5TDI0LjE2MTUgOC4xMjkzTDI0LjE2MTUgMjQuMTI5M0wyMi4xNjE1IDI0LjEyOTNMMjIuMTYxNSAxMS41MzYyTDguODAyNzUgMjQuODM3OUw3LjM5MTU2IDIzLjQyMDdMMjAuNzM5OSAxMC4xMjkzTDguMDk3MjcgMTAuMTI5M0w4LjA5NzI4IDguMTI5MjlaIiBmaWxsPSIjODg4IiAvPgo8L3N2Zz4=");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 8px 16px 4px 8px;
+  margin-left: 8px;
+  border-radius: 5px;
+  display: block;
+  background-color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  color: #888;
+}
+.news-with-tag .tag:hover {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMzMiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMyAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOC4wOTcyOCA4LjEyOTI5TDI0LjE2MTUgOC4xMjkzTDI0LjE2MTUgMjQuMTI5M0wyMi4xNjE1IDI0LjEyOTNMMjIuMTYxNSAxMS41MzYyTDguODAyNzUgMjQuODM3OUw3LjM5MTU2IDIzLjQyMDdMMjAuNzM5OSAxMC4xMjkzTDguMDk3MjcgMTAuMTI5M0w4LjA5NzI4IDguMTI5MjlaIiBmaWxsPSJibGFjayIgLz4KPC9zdmc+Cg==");
+  color: #000;
+}
+
 
 /* cnap page styles end */
 
