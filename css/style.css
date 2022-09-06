@@ -2293,6 +2293,24 @@ a:hover.end-option h3{
   line-height: 28px;
 }
 
+.top-navigation-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top:16px; 
+  padding: 16px 0; 
+  border-bottom: 1px solid #888;
+}
+
+.top-navigation-grid .item {
+  padding: 0 10px;
+  margin-bottom: 16px;
+}
+
+.top-navigation-grid .item > h5 {
+  color: #888;
+}
+
 .bottom-navigation-grid {
   width: 100%;
   display: grid;
@@ -2532,6 +2550,34 @@ svg:hover .fill {
 .contrast-enable .black-button:hover {
   background: #fff;
   border: solid black 2px;
+}
+
+#scroll-top {
+  display: inline-block;
+  background-color: rgba(100, 100, 100, .4);
+  padding: 18px 24px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  font-size: 30px;
+}
+#scroll-top:hover {
+  cursor: pointer;
+  background-color: #888;
+}
+#scroll-top:active {
+  background-color: #888;
+}
+#scroll-top.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* accessibility features end */
@@ -3306,6 +3352,10 @@ svg:hover .fill {
   .close:before, .close:after {
     left: 11px;
     height: 26px;
+  }
+
+  .top-navigation-grid {
+    justify-content: flex-end;
   }
 
   .bottom-navigation-grid {
