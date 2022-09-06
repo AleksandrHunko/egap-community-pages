@@ -59,4 +59,18 @@ window.addEventListener('load', function () {
     searchIcon.addEventListener('click', (thisIcon) => {
       thisIcon.target.parentElement.parentElement.querySelector('.search-window').classList.add('active')
     })
+
+    try {
+      const scrollTopButton = document.querySelector('#scroll-top')
+  
+      window.onscroll = function () { 
+        if (window.scrollY > 1200) {
+          scrollTopButton.classList.add('show');
+        } else {
+          scrollTopButton.classList.remove('show');
+        }
+      };
+    } catch (err) {
+      console.log('scrollTopButton not found');
+    } 
 })
