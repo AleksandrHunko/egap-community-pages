@@ -1,13 +1,13 @@
 "use_strict"
 
-const koatuu = '0710100000'
+const koatuu = '5324085900'
 
 const itemSchema = (title, link, votes, budget) => {
   let insertedDiv = document.createElement('div')
   insertedDiv.classList.add("item");
   const insertedLink = document.createElement('a')
   insertedDiv.innerHTML = `
-    <a href="${link}"><h4>${title}</h4></a>
+    <a href="${link}" target="_blank"><h4>${title}</h4></a>
     <p>Необхідний бюджет ${budget}грн</p>
     <p>Зібрано ${votes} голосів</p>
   `
@@ -76,7 +76,7 @@ function showBudgets(link) {
         .appendChild(
           itemSchema(
             budgets[i].title, 
-            budgets[i].url_project, 
+            budgets[i].url_project || budgets[i].link, 
             budgets[i].votes, 
             budgets[i].budget
           )
