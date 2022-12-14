@@ -1327,6 +1327,10 @@ a:hover.end-option h3{
   width: 33%;
 }
 
+.two-one-container .one-column img {
+  margin: auto;
+}
+
 
 .two-one-container.border.reverse .one-column  {
   padding: 16px;
@@ -2580,6 +2584,51 @@ svg:hover .fill {
   visibility: visible;
 }
 
+.emoji-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.three-column-variety-container,
+.two-column-variety-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.three-column-variety-container > .item {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 32%;
+  padding: 24px;
+}
+.three-column-variety-container > .item > img {
+  width: 100%;
+  height: auto;
+}
+
+.three-column-variety-container > .item .black-button,
+.two-column-variety-container > .item .black-button {
+  width: 100%;
+}
+
+
+.two-column-variety-container > .item {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 49%;
+  padding: 16px;
+}
+
+.two-column-variety-container > .item.white,
+.three-column-variety-container > .item.white {
+  background-color: #fff;
+}
+
 /* accessibility features end */
 
 /* media start */
@@ -2779,6 +2828,16 @@ svg:hover .fill {
   
   .council-item > img {
     height: 36vw;
+  }
+
+  .three-column-variety-container > .item {
+    width: 49%;
+    padding: 16px;
+  }
+
+  .emoji-icon {
+    width: 40px;
+    height: 40px;
   }
 
 
@@ -3302,6 +3361,13 @@ svg:hover .fill {
 
   .mobile-two-top .two-column {
     margin-bottom: 32px;
+  }
+
+  .three-column-variety-container > .item {
+    width: 100%;
+  }
+  .two-column-variety-container > .item {
+    width: 100%;
   }
 
   .two-one-container.border .one-column {
