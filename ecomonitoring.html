@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body class="color-style-3">
+    <nav>
+        <a href="" class="nav-logo">
+            <img src="./images/logo.svg" alt="">
+            <p class="hide-mobile">Цифрова Громада</p>
+        </a>
+        <div class="accessibility">
+            <img src="./images/vision-icon.svg" alt="">
+            <p>Людям із порушенням зору</p>
+        </div>
+        <div class="nav-menu">
+            <a href="#" class="nav-elem underline"><span>Новини</span></a>
+            <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+            <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+            <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+        </div>
+        <div class="show-mobile" id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="menu-wrapper">
+                <div id="menu">
+                    <div class="menu-top">
+                        <div class="nav-logo show-mobile">
+                            <img src="./images/logo.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="nav-menu-mobile">
+                        <a href="#" class="nav-elem underline"><span>Новини</span></a>
+                        <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+                        <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+                        <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-icon">
+            <img src="./images/search-icon.svg" alt="">
+        </div>
+        <div class="search-window">
+            <div class="close"></div>
+            <form action="">
+            <h3>Пошук</h3>
+            <br>
+            <div class="stylyzed-input">
+                <input name="search" type="text" autocomplete="off" required>
+                <label class="input-label">
+                    <span class="input-span">Введіть ваш пошуковий запит</span>
+                </label>
+            </div> 
+            <button type="submit" style="width: 100%;" class="black-button">Знайти</button>
+            <h4>Знайдено 4 результати</h4>
+            <div class="search-results">
+                <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради восьмого скликання.</a></p>
+                <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради восьмого скликання.</a></p>
+                <p><a href="/">Пошуковий результат 123</a></p>
+                <p><a href="/">Пошуковий результат 123</a></p>
+            </div>
+            </form>
+        </div>
+      </nav>
+  <header class="colored">
+    <div class="header-content">
+        <div class="header-img">
+            <img src="./images/header-image.jpg" alt="">
+        </div>
+        <div class="header-title">
+            <img src="./images/Gerb_Zymne.png" alt="">
+            <h1>Зимнівська громада</h1>
+            <p>Волинська область, Володимир-Волинський район</p>
+        </div>
+        <div class="ecomonitoring">
+            <div class="item">
+                <p style="color: #888">Якість повітря</p>
+                <h6 class="aqi"></h6>
+            </div>
+            <div class="item">
+                <p style="color: #888">Температура</p>
+                <h6 class="temperature"></h6>
+            </div>
+            <div class="item">
+                <p style="color: #888">Вологість</p>
+                <h6 class="humidity"></h6>
+            </div>
+            <div class="item">
+                <div></div>
+                <a href=""><p style="text-decoration: underline;">Екомоніторинг</p></a>
+            </div>
+        </div>
+        <script src="./js/ecomonitoring-vidget.js"></script>
+    </div>
+  </header>
+  
+  <script src="./js/main.js"></script>
+</body>
+</html>
