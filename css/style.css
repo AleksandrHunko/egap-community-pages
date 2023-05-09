@@ -1326,7 +1326,7 @@ a:hover.end-option h3{
 }
 
 .two-one-container.border {
-  border: solid 2px #000
+  border: solid 2px #000;
 }
 
 .two-one-container.no-margin-top {
@@ -1356,7 +1356,8 @@ a:hover.end-option h3{
 
 .two-one-container.border.reverse .one-column  {
   padding: 16px;
-  border-right: solid 2px #000
+  border-right: solid 2px #000;
+  align-self: stretch;
 }
 
 .two-one-container .two-column {
@@ -1973,7 +1974,7 @@ a:hover.end-option h3{
   border-bottom: solid 2px transparent;
 }
 
-.accordion-menu-content .item:hover {
+.accordion-menu-content .item a:hover {
   text-decoration: underline;
 }
 
@@ -3392,7 +3393,7 @@ svg:hover .fill {
     width: 100%;
   }
 
-  .two-one-container.border .one-column {
+  .two-one-container.border.reverse .one-column {
     border-right: none;
     border-bottom: solid 2px #000;
   }
