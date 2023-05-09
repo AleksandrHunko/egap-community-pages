@@ -55,10 +55,10 @@ function fillData(data) {
     document.querySelector("#aqi-value").style.width = "100px"
     addAQI(data.pm25, document.querySelector("#aqi-value"))
     document.querySelector("#humidity-value").innerHTML = `${data.humidity}%`
-    document.querySelector("#temperature-value").innerHTML = `${data.temperature}<sup>℃</sup>`
-    document.querySelector("#pm25-value").innerHTML = `${data.pm25}мкг/м³`
-    document.querySelector("#pm10-value").innerHTML = `${data.pm10}мкг/м³`
-    document.querySelector("#pressure-value").innerHTML = `${data.pressure}мм.рт.ст.`
+    document.querySelector("#temperature-value").innerHTML = `${data.temperature}<sup> ℃</sup>`
+    document.querySelector("#pm25-value").innerHTML = `${data.pm25} мкг/м³`
+    document.querySelector("#pm10-value").innerHTML = `${data.pm10} мкг/м³`
+    document.querySelector("#pressure-value").innerHTML = `${data.pressure} мм.рт.ст.`
     document.querySelector("#last-updated-value").innerHTML = `${formattedDate}`
     document.querySelector("#station-name-value").innerHTML = `${data.sensor_name}`
 
