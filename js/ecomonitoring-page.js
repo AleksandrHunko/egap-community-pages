@@ -61,6 +61,14 @@ function fillData(data) {
     document.querySelector("#pressure-value").innerHTML = `${data.pressure}мм.рт.ст.`
     document.querySelector("#last-updated-value").innerHTML = `${formattedDate}`
     document.querySelector("#station-name-value").innerHTML = `${data.sensor_name}`
+
+    if (data.provider == 'saveecobot') {
+      document.querySelector("#provider-value").innerHTML = "saveecobot"
+      document.querySelector("#provider-value").href = "https://www.saveecobot.com"
+    } else {
+      document.querySelector("#provider-value").innerHTML = "ecocity"
+      document.querySelector("#provider-value").href = "https://eco-city.org.ua"
+    }
 }
 
 
