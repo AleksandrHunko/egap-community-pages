@@ -590,11 +590,9 @@ header.colored,
 }
 
 .ecomonitoring {
-  display: flex;
-  justify-content: space-between;
-  width: 40%;
-  min-width: 520px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 767px;
   margin: 32px 10%;
   padding: 12px 0 32px;
   border-top: solid 2px #000;
@@ -605,6 +603,7 @@ header.colored,
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .ecomonitoring .item h6, .ecomonitoring .item p {
@@ -3012,6 +3011,15 @@ svg:hover .fill {
 
   .accessibility {
     display: none;
+  }
+
+  .ecomonitoring {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 24px 5%;
+    padding: 12px 0 16px;
+    border-top: solid 2px #000;
   }
 
   /* header end */
