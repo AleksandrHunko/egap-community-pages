@@ -2088,13 +2088,10 @@ a:hover.end-option h3{
 
 .div-steps {
   width: 80%;
-  padding: 16px 20% 32px 0;
+  padding: 48px 20% 48px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.div-steps p {
-  margin-bottom: 16px;
 }
 
 .sticky-image {
@@ -2303,6 +2300,10 @@ a:hover.end-option h3{
 
 .days-grid .item.active.selected {
   background-color: rgb(90, 110, 222);
+}
+
+.days-grid .item.full {
+  background-color: #ccc;
 }
 
 
@@ -2915,6 +2916,10 @@ svg:hover .fill {
     grid-template-columns: 1fr 1fr;
   }
 
+  .div-steps {
+    padding: 24px 20% 12px 0;
+  }
+
   /* page styles end */
 
   /* cnap page styles start */
@@ -3417,7 +3422,7 @@ svg:hover .fill {
   
   .div-steps {
     width: 80%;
-    padding: 0;
+    padding: 12px 0 0;
   }
 
   .qr-links {
