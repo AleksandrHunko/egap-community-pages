@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
                 for(let i = 1; i < response.data.length; i++) {
                     let opt = document.createElement('option');
                     opt.value = i;
-                    opt.innerHTML = response.data[i].sensor_name;
+                    opt.innerHTML = `${response.data[i].sensor_name} (${response.data[i].city_name})`;
                     select.appendChild(opt);
                 }
  
@@ -61,7 +61,7 @@ function fillData(data) {
     document.querySelector("#pressure-value").innerHTML = `${data.pressure} мм.рт.ст.`
     document.querySelector("#last-updated-value").innerHTML = `${formattedDate}`
     document.querySelector("#station-name-value").innerHTML = `${data.sensor_name}`
-    document.querySelector("#city-name-value").innerHTML = `${response.data[0].city_name}`
+    document.querySelector("#city-name-value").innerHTML = `${data.city_name}`
 
     if (data.provider == 'saveecobot') {
       document.querySelector("#provider-value").innerHTML = "saveecobot"
