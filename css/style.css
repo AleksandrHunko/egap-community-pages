@@ -919,7 +919,6 @@ section.colored {
 .section-news .news-item .image-container {
   width: 100%;
   min-height: 200px;
-  height: 32vh;
   max-height: 400px;
   margin-bottom: 16px;
 }
@@ -1497,7 +1496,6 @@ a:hover.end-option h3{
 .section-all-news .news-item .image-container {
   width: 49%;
   min-height: 200px;
-  height: 32vh;
   max-height: 400px;
   margin-bottom: 16px;
 }
