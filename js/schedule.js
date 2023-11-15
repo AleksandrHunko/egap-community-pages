@@ -41,7 +41,7 @@ function parseSchedule(scheduleJSON) {
 }
 
 window.addEventListener('load', function () {
-  if (schedule) {
+  if (typeof schedule != "undefined") {
     for (let i = 0; i < schedule.length; i++) {
       const institution = document.getElementById(`institution-${schedule[i].id}`)
       try {
