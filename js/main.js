@@ -1,7 +1,7 @@
 "use_strict"
 window.addEventListener('load', function () {
   try {
-    const menuLinks = document.querySelector('.nav-menu-mobile').querySelectorAll('.nav-elem')
+    const menuLinks = document.querySelector('.nav-menu-mobile').querySelectorAll('.nav-elem:not(.secondary-menu-anchor)')
 
     for (let i = 0; i < menuLinks.length; i++) {
       menuLinks[i].addEventListener('click', () => {
@@ -19,6 +19,27 @@ window.addEventListener('load', function () {
     })
   } catch(err) {
     console.log('mobile menu not found');
+  }
+
+  try {
+    const secondaryMenuLinks = document.querySelectorAll('.secondary-menu-anchor')
+
+    for (let i = 0; i < secondaryMenuLinks.length; i++) {
+      secondaryMenuLinks[i].addEventListener('click', (event) => {
+        if (event.target.tagName === 'A') {
+          event.target.classList.toggle("open")
+          console.log(event.target.parentElement.nextElementSibling);
+          event.target.nextElementSibling.classList.toggle("open")
+        } else {
+          event.target.parentElement.classList.toggle("open")
+          console.log(event.target.parentElement.nextElementSibling);
+          event.target.parentElement.nextElementSibling.classList.toggle("open")
+        }
+      })
+    }
+
+  } catch (err) {
+    console.log('secondary menu not found');
   }
 
   const inputs = document.querySelectorAll(".stylyzed-input");
