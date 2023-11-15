@@ -1,194 +1,277 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 </head>
+
 <body class="color-style-3">
     <nav>
-        <a href="" class="nav-logo">
-            <img src="./images/logo.svg" alt="">
-            <p class="hide-mobile">Цифрова Громада</p>
-        </a>
-        <div class="accessibility">
-            <img src="./images/vision-icon.svg" alt="">
-            <p>Людям із порушенням зору</p>
+        <div class="nav-logo">
+            <a href="/" style="display: inline-block; height: 60%; margin-right: 20px">
+                <img src="./images/house.png" alt="Головна сторінка">
+            </a>
+            <a href="/" class="hide-mobile" style="display: inline-block; height: 90%">
+                <img src="./images/victoryV1.svg" alt="Головна сторінка">
+            </a>
+            <a href="/" class="show-mobile" style="display: inline-block; height: 90%">
+                <img src="./images/victoryV1-short.svg" alt="Головна сторінка">
+            </a>
         </div>
-        <div class="nav-menu">
+        <div class="nav-menu hide-mobile">
             <a href="#" class="nav-elem underline"><span>Новини</span></a>
             <a href="#" class="nav-elem underline"><span>Рішення</span></a>
             <a href="#" class="nav-elem underline"><span>Послуги</span></a>
             <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
-        </div>
-        <div class="show-mobile" id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="menu-wrapper">
-                <div id="menu">
-                    <div class="menu-top">
-                        <div class="nav-logo show-mobile">
-                            <img src="./images/logo.svg" alt="">
-                        </div>
+            <a class="nav-elem underline secondary-menu-anchor"><span>Ще</span></a>
+            <div class="nav-secondary-menu">
+                <div class="navigation-grid">
+                    <div class="item">
+                        <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 3</span></a>
                     </div>
-                    <div class="nav-menu-mobile">
-                        <a href="#" class="nav-elem underline"><span>Новини</span></a>
-                        <a href="#" class="nav-elem underline"><span>Рішення</span></a>
-                        <a href="#" class="nav-elem underline"><span>Послуги</span></a>
-                        <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+                    <div class="item">
+                        <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                    </div>
+                    <div class="item">
+                        <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                        <a href="#" class="nav-elem underline"><span>Link 3</span></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="search-icon">
-            <img src="./images/search-icon.svg" alt="">
-        </div>
-        <div class="search-window">
-            <div class="close"></div>
-            <form action="">
-            <h3>Пошук</h3>
-            <br>
-            <div class="stylyzed-input">
-                <input name="search" type="text" autocomplete="off" required>
-                <label class="input-label">
-                    <span class="input-span">Введіть ваш пошуковий запит</span>
-                </label>
-            </div> 
-            <button type="submit" style="width: 100%;" class="black-button">Знайти</button>
-            <h4>Знайдено 4 результати</h4>
-            <div class="search-results">
-                <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради восьмого скликання.</a></p>
-                <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради восьмого скликання.</a></p>
-                <p><a href="/">Пошуковий результат 123</a></p>
-                <p><a href="/">Пошуковий результат 123</a></p>
+        <div class="nav-menu">
+            <div class="search-icon">
+                <img src="./images/search-icon.svg" alt="">
             </div>
-            </form>
+            <div class="search-window">
+                <div class="close"></div>
+                <form action="">
+                    <h3>Пошук</h3>
+                    <br>
+                    <div class="stylyzed-input">
+                        <input name="search" type="text" autocomplete="off" required>
+                        <label class="input-label">
+                            <span class="input-span">Введіть ваш пошуковий запит</span>
+                        </label>
+                    </div>
+                    <button type="submit" style="width: 100%;" class="black-button">Знайти</button>
+                    <h4>Знайдено 4 результати</h4>
+                    <div class="search-results">
+                        <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської
+                                сільської ради восьмого скликання.</a></p>
+                        <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської
+                                сільської ради восьмого скликання.</a></p>
+                        <p><a href="/">Пошуковий результат 123</a></p>
+                        <p><a href="/">Пошуковий результат 123</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="accessibility">
+                <img src="./images/vision-icon.svg" alt="">
+            </div>
+            <div class="show-mobile" id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <div class="menu-wrapper">
+                    <div id="menu">
+                        <div class="menu-top">
+                            <div class="nav-logo">
+                                <a href="/" style="display: inline-block; height: 90%">
+                                    <img src="./images/victoryV1.svg" alt="Головна сторінка">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="nav-menu-mobile">
+                            <a href="#" class="nav-elem underline"><span>Новини</span></a>
+                            <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+                            <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+                            <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+                            <a class="nav-elem underline secondary-menu-anchor"><span>Ще</span></a>
+                            <div class="nav-secondary-menu-mobile">
+                                <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 4</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 5</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 6</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 7</span></a>
+                                <a href="#" class="nav-elem underline"><span>Link 8</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </nav>
-  <header class="colored">
-    <div class="header-content">
-        <div class="header-img">
-            <img src="./images/header-image.jpg" alt="">
+    </nav>
+    <header class="colored">
+        <div class="header-content">
+            <div class="header-img">
+                <img src="./images/header-image.jpg" alt="">
+            </div>
+            <div class="header-title">
+                <img src="./images/Gerb_Zymne.png" alt="">
+                <h1>Зимнівська громада</h1>
+                <p>Волинська область, Володимир-Волинський район</p>
+            </div>
         </div>
-        <div class="header-title">
-            <img src="./images/Gerb_Zymne.png" alt="">
-            <h1>Зимнівська громада</h1>
-            <p>Волинська область, Володимир-Волинський район</p>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="section-events">
-        <h4>Важливо</h4>
-        <div class="events">
-            <div class="main-event-with-picture">
-                <div class="event-text">
+    </header>
+    <main>
+        <section class="section-events">
+            <h4>Важливо</h4>
+            <div class="events">
+                <div class="main-event-with-picture">
+                    <div class="event-text">
+                        <div>
+                            <a href="" class="event-part">
+                                <h3>5 січня відбудеться різдвяний ярмарок</h3>
+                            </a>
+                        </div>
+                        <div>
+                            <div class="event-part">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="event-part">
+                                <p>5 січня</p>
+                                <p>17.00-19.00</p>
+                                <p>Майдан Незалежності</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/secton-img-1.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="section-services colored">
+            <h2>Інформація та сервіси</h2>
+            <div class="services-grid">
+                <div class="service-item-special">
                     <div>
-                        <a href="" class="event-part">
-                            <h3>5 січня відбудеться різдвяний ярмарок</h3>
-                        </a>
+                        <img src="./images/logo.svg" alt="">
+                        <img src="./images/gerb.svg" alt="">
                     </div>
+                    <p>Державні послуги онлайн</p>
+                    <h3>Також доступні базові послуги</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="black-button">Перейти</button>
+                </div>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Інформація про громаду</h3>
+                    </a>
+                    <p>Зимнівська сільська об’єднана територіальна громада включає в себе двадцять чотири села.</p>
+                </div>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>ЦНАП</h3>
+                    </a>
+                    <p>Центр надання адміністративних послуг утворений об’єднаною територіальною громадою Зимнівської
+                        сільської ради, для зручності отримання адміністративних послуг суб’єктам звернень громади
+                        утворенні віддалені місця для роботи адміністраторів такого центру</p>
+                </div>
+
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Чатбот</h3>
+                    </a>
+                    <p>За допомогою чатботу можна підписатися на новини громади отримувати більшість послуг Не заходячи
+                        на сайт.</p>
+                </div>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Е-довідник закладів</h3>
+                    </a>
+                    <p>Довідник закладів містить усю необхідну інформацію про заклади громади: розклад роботи, адресу,
+                        телефони та інформацію про послуги, які надаються у закладах.</p>
+                </div>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Консультації</h3>
+                    </a>
+                    <p>Консультції с громадськістю Зимнівської сільської об’єднаної територіальної громади</p>
                     <div>
-                        <div class="event-part">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                        <div class="event-part">
-                            <p>5 січня</p>
-                            <p>17.00-19.00</p>
-                            <p>Майдан Незалежності</p>
-                        </div>
+                        <p>Проведено опитувань: 35</p>
+                        <p>Проведено консультацій: 106</p>
+                        <p>Відповідей на питання: 75</p>
                     </div>
                 </div>
-                <img src="./images/secton-img-1.png" alt="">
-            </div>
-        </div>
-    </section>
-    <section class="section-services colored">
-        <h2>Інформація та сервіси</h2>
-        <div class="services-grid">
-            <div class="service-item-special">
-                <div>
-                    <img src="./images/logo.svg" alt="">
-                    <img src="./images/gerb.svg" alt="">
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Громадський бюджет</h3>
+                    </a>
+                    <p>Проекти громадського бюджету Зимнівської сільської об’єднаної територіальної громади</p>
+                    <div>
+                        <p>Подано проектів: 68</p>
+                        <p>На реалізації: 19</p>
+                        <p>Реалізовано проектів: 273</p>
+                    </div>
                 </div>
-                <p>Державні послуги онлайн</p>
-                <h3>Також доступні базові послуги</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button class="black-button">Перейти</button>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>Інформація про громаду</h3></a>
-                <p>Зимнівська сільська об’єднана територіальна громада включає в себе двадцять чотири села.</p>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>ЦНАП</h3></a>
-                <p>Центр надання адміністративних послуг утворений об’єднаною територіальною громадою Зимнівської сільської ради, для зручності отримання адміністративних послуг суб’єктам звернень громади утворенні віддалені місця  для роботи адміністраторів такого центру</p>
-            </div>
-           
-            <div class="service-item">
-                <a href="#"><h3>Чатбот</h3></a>
-                <p>За допомогою чатботу можна підписатися на новини громади отримувати більшість послуг Не заходячи на сайт.</p>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>Е-довідник закладів</h3></a>
-                <p>Довідник закладів містить усю необхідну інформацію про заклади громади: розклад роботи, адресу, телефони та інформацію про послуги, які надаються у закладах.</p>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>Консультації</h3></a>
-                <p>Консультції с громадськістю Зимнівської сільської об’єднаної територіальної громади</p>
-                <div>
-                    <p>Проведено опитувань: 35</p>
-                    <p>Проведено консультацій: 106</p>
-                    <p>Відповідей на питання: 75</p>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Петиції</h3>
+                    </a>
+                    <p>Петиції Зимнівської сільської об’єднаної територіальної громади</p>
+                    <div>
+                        <p>Розглянуто петицій: 179</p>
+                        <p>Підтримано петицій: 34</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <a href="#">
+                        <h3>Відкрите місто</h3>
+                    </a>
+                    <p>Комунальні проблеми, аварії, порушення на карті громади.</p>
+                    <div>
+                        <p>Подано проблем: 712</p>
+                        <p>Вирішено проблем: 656</p>
+                    </div>
                 </div>
             </div>
-            <div class="service-item">
-                <a href="#"><h3>Громадський бюджет</h3></a>
-                <p>Проекти громадського бюджету Зимнівської сільської об’єднаної територіальної громади</p>
-                <div>
-                    <p>Подано проектів: 68</p>
-                    <p>На реалізації: 19</p>
-                    <p>Реалізовано проектів: 273</p>
-                </div>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>Петиції</h3></a>
-                <p>Петиції Зимнівської сільської об’єднаної територіальної громади</p>
-                <div>
-                    <p>Розглянуто петицій: 179</p>
-                    <p>Підтримано петицій: 34</p>
-                </div>
-            </div>
-            <div class="service-item">
-                <a href="#"><h3>Відкрите місто</h3></a>
-                <p>Комунальні проблеми, аварії, порушення на карті громади.</p>
-                <div>
-                    <p>Подано проблем: 712</p>
-                    <p>Вирішено проблем: 656</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
-    <section class="section-news">
-        <h2>Новини</h2>
-        <a class="link-hide-mobile" href="#"><p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z" fill="#000"/>
-            </svg></a>
-        <div class="news">
-            <div class="news-block">
+        <section class="section-news">
+            <h2>Новини</h2>
+            <a class="link-hide-mobile" href="#">
+                <p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z"
+                        fill="#000" />
+                </svg>
+            </a>
+            <div class="news">
+                <div class="news-block">
                     <div class="news-item">
                         <div class="image-container">
                             <img src="./images/news-2.jpg" alt="">
                         </div>
                         <div class="news-text">
                             <p class="date">18.12.2020 09:33</p>
-                            <a href="#"><h4>Чергова сесія Зимнівської сільської ради 24.12.2020року</h4></a>
-                            <p>24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради восьмого скликання. На сесію запрошуються депутати сільської ради, депутати районної та обласної ради, старости старостинських округів ради та громадськість.</p>
+                            <a href="#">
+                                <h4>Чергова сесія Зимнівської сільської ради 24.12.2020року</h4>
+                            </a>
+                            <p>24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської сільської ради
+                                восьмого скликання. На сесію запрошуються депутати сільської ради, депутати районної та
+                                обласної ради, старости старостинських округів ради та громадськість.</p>
                         </div>
                     </div>
                     <div class="news-item">
@@ -197,8 +280,12 @@
                         </div>
                         <div class="news-text">
                             <p class="date">08.12.2020 10:40</p>
-                            <a href="#"><h4>Чергова 2-га сесія Зимнівської сільської ради 15.12.2020року</h4></a>
-                            <p>15.12.2020 об 10 год. відбудеться засідання чергової 2-ї сесії Зимнівської сільської ради восьмого скликання. На сесію запрошуються депутати сільської ради, депутати районної ради, старости старостинських округів ради та громадськість.</p>
+                            <a href="#">
+                                <h4>Чергова 2-га сесія Зимнівської сільської ради 15.12.2020року</h4>
+                            </a>
+                            <p>15.12.2020 об 10 год. відбудеться засідання чергової 2-ї сесії Зимнівської сільської ради
+                                восьмого скликання. На сесію запрошуються депутати сільської ради, депутати районної
+                                ради, старости старостинських округів ради та громадськість.</p>
                         </div>
                     </div>
                     <div class="news-item">
@@ -207,111 +294,174 @@
                         </div>
                         <div class="news-text">
                             <p class="date">01.12.2020 09:11</p>
-                            <a href="#"><h4>Перша нарада-виконком з новими старостами Зимнівської ОТГ та новим складом виконавчого комітету Зимнівської сільської ради</h4></a>
-                            <p>30 листопада 2020 року відбулась перша нарада-виконком з новими старостами Зимнівської ОТГ та новим складом виконавчого комітету Зимнівської сільської ради.</p>
+                            <a href="#">
+                                <h4>Перша нарада-виконком з новими старостами Зимнівської ОТГ та новим складом
+                                    виконавчого комітету Зимнівської сільської ради</h4>
+                            </a>
+                            <p>30 листопада 2020 року відбулась перша нарада-виконком з новими старостами Зимнівської
+                                ОТГ та новим складом виконавчого комітету Зимнівської сільської ради.</p>
                         </div>
-                    </div>
-            </div>
-        </div>
-        <a class="link-show-mobile" href="#"><p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z" fill="#000"/>
-            </svg></a>
-    </section>
-
-    <section class="colored section-decisions">
-        <h2>Рішення громади</h2>
-        <a class="link-hide-mobile" href="#"><p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z" fill="#000"/>
-            </svg></a>
-        <div class="decisions-grid">
-            <div class="decisions-item-special">
-                <div>
-                    <img src="./images/decisions-img.svg" alt="">
-                </div>
-                <h3>Рішення, що готуються до розгляду</h3>
-                <button class="black-button">Ознайомитися</button>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-            <div class="decisions-item">
-                <div class="date">22/02/2021</div>
-                <a href="#"><h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної територіальної громади</h5></a>
-            </div>
-
-        </div>
-        <a class="link-show-mobile" href="#"><p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z" fill="#000"/>
-            </svg></a>
-    </section>
-
-    <section class="section-council">
-        <div class="council">
-            <div class="council-white">
-                <h2>Голова громади</h2>
-                <div class="council-items">
-                    <div class="council-item">
-                        <img src="./images/head.jpg" alt="">
-                        <div class="social-icons">
-                            <a href="#"><img src="./images/soc-fb.svg" alt=""></a>
-                            <a href="#"><img src="./images/soc-insta.svg" alt=""></a>
-                            <a href="#"><img src="./images/soc-tg.svg" alt=""></a>
-                            <a href="#"><img src="./images/soc-tw.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="council-item">
-                        <h4>Прізвище Ім'я По батькові</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button class="black-button">Записатися на прийом</button>
                     </div>
                 </div>
             </div>
-            <div class="council-colored">
-                <h4>Селищна рада другого скликання</h4>
-                <p>25 депутатів</p>
-                <button class="black-button alternative">Депутатський корпус</button>
+            <a class="link-show-mobile" href="#">
+                <p>Усі новини</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z"
+                        fill="#000" />
+                </svg>
+            </a>
+        </section>
+
+        <section class="colored section-decisions">
+            <h2>Рішення громади</h2>
+            <a class="link-hide-mobile" href="#">
+                <p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z"
+                        fill="#000" />
+                </svg>
+            </a>
+            <div class="decisions-grid">
+                <div class="decisions-item-special">
+                    <div>
+                        <img src="./images/decisions-img.svg" alt="">
+                    </div>
+                    <h3>Рішення, що готуються до розгляду</h3>
+                    <button class="black-button">Ознайомитися</button>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+                <div class="decisions-item">
+                    <div class="date">22/02/2021</div>
+                    <a href="#">
+                        <h5>Про надання цільової адресної допомоги окремим категоріям населення Межівської селищної
+                            територіальної громади</h5>
+                    </a>
+                </div>
+
             </div>
-        </div>
-
-    </section>
-
-    <section class="colored section-end-options">
-        <div class="end-options">
-            <a href="" class="end-option">
-                <h3>Картка громади</h3>
+            <a class="link-show-mobile" href="#">
+                <p>Усі рішення</p><svg width="50" height="24" viewBox="0 0 70 42" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 22.8835H61.7323L46.2441 38.739L49.3858 42L70 21.0281L49.3858 0L46.2441 3.09237L61.4016 18.3855H0V22.8835Z"
+                        fill="#000" />
+                </svg>
             </a>
-            <a href="" class="end-option">
-                <h3>Інвестиційний паспорт</h3>
-            </a>
-            <a href="" class="end-option">
-                <h3>Каталог закладів</h3>
-            </a>
-        </div>
-    </section>
+        </section>
 
-  </main>
-  <!--<footer id="footer">
+        <section class="section-council">
+            <div class="council">
+                <div class="council-white">
+                    <h2>Голова громади</h2>
+                    <div class="council-items">
+                        <div class="council-item">
+                            <img src="./images/head.jpg" alt="">
+                            <div class="social-icons">
+                                <a href="#"><img src="./images/soc-fb.svg" alt=""></a>
+                                <a href="#"><img src="./images/soc-insta.svg" alt=""></a>
+                                <a href="#"><img src="./images/soc-tg.svg" alt=""></a>
+                                <a href="#"><img src="./images/soc-tw.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="council-item">
+                            <h4>Прізвище Ім'я По батькові</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button class="black-button">Записатися на прийом</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="council-colored">
+                    <h4>Селищна рада другого скликання</h4>
+                    <p>25 депутатів</p>
+                    <button class="black-button alternative">Депутатський корпус</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="colored section-end-options">
+            <div class="end-options">
+                <a href="" class="end-option">
+                    <h3>Картка громади</h3>
+                </a>
+                <a href="" class="end-option">
+                    <h3>Інвестиційний паспорт</h3>
+                </a>
+                <a href="" class="end-option">
+                    <h3>Каталог закладів</h3>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <div class="five-column-grid">
+                <div class="item">
+                    <div class="header">Міністерство</div>
+                    <a href="#">
+                        <p> Команда</p>
+                    </a>
+                    <a href="#">
+                        <p>Правові засади</p>
+                    </a>
+                    <a href="#">
+                        <p>Правові засади</p>
+                    </a>
+                    <a href="#">
+                        <p>Правові засади</p>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!--<footer id="footer">
       <div class="footer-left">
               <p>Офіційний вебсайт Зимнівської громади</p>
               <div>
@@ -392,6 +542,7 @@
           </div>
       </div>
   </footer>-->
-  <script src="./js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
