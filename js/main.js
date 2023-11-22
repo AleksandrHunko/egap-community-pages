@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
         document.body.style.overflowY = "auto";
       })
     }
-  
+
     document.getElementById('menuToggle').querySelector('input').addEventListener('change', function () {
       if (this.checked) {
         document.body.style.overflowY = "hidden";
@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
         document.body.style.overflowY = "auto";
       }
     })
-  } catch(err) {
+  } catch (err) {
     console.log('mobile menu not found');
   }
 
@@ -45,7 +45,7 @@ window.addEventListener('load', function () {
   const inputs = document.querySelectorAll(".stylyzed-input");
   if (inputs.length > 0) {
     for (let i = 0; i < inputs.length; i++) {
-      inputs[i].querySelector('input').addEventListener('change', function() {
+      inputs[i].querySelector('input').addEventListener('change', function () {
         if (this.value == "") {
           this.classList.remove('valid')
         } else {
@@ -58,12 +58,12 @@ window.addEventListener('load', function () {
   if (document.cookie.split('; ').find(row => row.startsWith('enable-contrast'))) {
     document.querySelector('body').classList.toggle('contrast-enable')
     document.querySelector('.accessibility').querySelector('p').innerHTML = 'Стандартна версія'
-  } 
+  }
 
   try {
     document.querySelector('.accessibility').addEventListener('click', () => {
       document.querySelector('body').classList.toggle('contrast-enable')
-      if(document.querySelector('body').classList.contains('contrast-enable')) {
+      if (document.querySelector('body').classList.contains('contrast-enable')) {
         document.querySelector('.accessibility').querySelector('p').innerHTML = 'Стандартна версія'
         document.cookie = "enable-contrast=true; path=/;";
       } else {
@@ -71,37 +71,35 @@ window.addEventListener('load', function () {
         document.cookie = "enable-contrast=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       }
     })
-  } catch(err) {
+  } catch (err) {
     console.log('accessibility menu not found');
   }
 
   const closeButtons = document.querySelectorAll('.close')
 
-    for (let i = 0; i < closeButtons.length; i++) {
-        closeButtons[i].addEventListener('click', (thisButton) => {
-            thisButton.target.parentElement.classList.remove('active')
-        })
-    }
-    try {
-      const searchIcon = document.querySelector('.search-icon')
-      searchIcon.addEventListener('click', (thisIcon) => {
-        thisIcon.target.parentElement.parentElement.querySelector('.search-window').classList.add('active')
-      })
-    } catch(err) {
-      console.log('searchIcon not found');
-    }
+  for (let i = 0; i < closeButtons.length; i++) {
+    closeButtons[i].addEventListener('click', (thisButton) => {
+      thisButton.target.parentElement.classList.remove('active')
+    })
+  }
 
-    try {
-      const scrollTopButton = document.querySelector('#scroll-top')
-  
-      window.onscroll = function () { 
-        if (window.scrollY > 1200) {
-          scrollTopButton.classList.add('show');
-        } else {
-          scrollTopButton.classList.remove('show');
-        }
-      };
-    } catch (err) {
-      console.log('scrollTopButton not found');
-    } 
+  const searchIcon = document.querySelector('.search-icon')
+  if (searchIcon != null) {
+    searchIcon.addEventListener('click', (thisIcon) => {
+      thisIcon.target.parentElement.parentElement.querySelector('.search-window').classList.add('active')
+    })
+  }
+
+  const scrollTopButton = document.querySelector('#scroll-top')
+
+  if (scrollTopButton != null) {
+    window.onscroll = function () {
+      if (window.scrollY > 1200) {
+        scrollTopButton.classList.add('show');
+      } else {
+        scrollTopButton.classList.remove('show');
+      }
+    };
+  }
+
 })
