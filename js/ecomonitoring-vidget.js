@@ -7,11 +7,10 @@ window.addEventListener('load', function () {
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 const response = JSON.parse(this.responseText)
-                document.querySelector(".ecomonitoring").querySelector('.aqi').style.padding = "12px 8px"
-                document.querySelector(".ecomonitoring").querySelector('.aqi').style.margin = "12px 0 -10px 0"
+                //document.querySelector(".ecomonitoring").querySelector('.aqi').style.padding = "12px 8px"
+                //document.querySelector(".ecomonitoring").querySelector('.aqi').style.margin = "12px 0 -10px 0"
                 let aqi = addAQI(response.pm25, document.querySelector(".ecomonitoring").querySelector('.aqi'))
-                console.log(aqi);
-                document.querySelector(".ecomonitoring").querySelector('.humidity').innerHTML = `${response.humidity}%`
+                //document.querySelector(".ecomonitoring").querySelector('.humidity').innerHTML = `${response.humidity}%`
                 document.querySelector(".ecomonitoring").querySelector('.temperature').innerHTML = `${response.temperature}<sup>℃</sup>`
             }
         }
@@ -24,23 +23,17 @@ window.addEventListener('load', function () {
 function addAQI(pm25, element) {
     let aqi;
     if (pm25 >= 0 && pm25 <= 12.0) {
-        element.style.background = "#2CE07F"
-        element.innerHTML = "Добрий рівень"
+        element.innerHTML = "Повітря ✅"
     } else if (pm25 > 12.0 && pm25 <= 35.4) {
-        element.style.background = "#E4FF3D"
-        element.innerHTML = "Задовільний рівень"
+        element.innerHTML = "Повітря ⚠️"
     } else if (pm25 > 35.4 && pm25 <= 55.4) {
-        element.style.background = "#FF9A3D"
-        element.innerHTML = "Поганий рівень"
+        element.innerHTML = "Повітря ‼️"
     } else if (pm25 > 55.4 && pm25 <= 150.4) {
-        element.style.background = "#B52626"
-        element.innerHTML = "Дуже поганий рівень"
+        element.innerHTML = "Повітря ‼️"
     } else if (pm25 > 150.4 && pm25 <= 250.4) {
-        element.style.background = "#B52626"
-        element.innerHTML = "Небезпечний рівень"
+        element.innerHTML = "Повітря ‼️"
     } else {
-        element.style.background = "#B52626"
-        element.innerHTML = "Надзвичайно небезпечний рівень"
+        element.innerHTML = "Повітря ‼️"
     }
     return;
 }
