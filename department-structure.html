@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js" async></script>
+  <script src="./js/hromada-map.js" async></script>
+  <title>Document</title>
+</head>
+
+<body class="color-style-10">
+  <nav>
+    <div class="nav-logo">
+        <a href="/" style="display: inline-block; height: 60%; margin-right: 20px">
+            <img src="./images/house.png" alt="Головна сторінка">
+        </a>
+        <a href="/" class="hide-mobile" style="display: inline-block; height: 90%">
+            <img src="./images/victoryV1.svg" alt="Головна сторінка">
+        </a>
+        <a href="/" class="show-mobile" style="display: inline-block; height: 90%">
+            <img src="./images/victoryV1-short.svg" alt="Головна сторінка">
+        </a>
+    </div>
+    <div class="nav-menu hide-mobile">
+        <a href="#" class="nav-elem underline"><span>Новини</span></a>
+        <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+        <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+        <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+        <a class="nav-elem underline secondary-menu-anchor"><span>Ще</span></a>
+        <div class="nav-secondary-menu">
+            <div class="navigation-grid">
+                <div class="item">
+                    <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                </div>
+                <div class="item">
+                    <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                </div>
+                <div class="item">
+                    <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                </div>
+                <div class="item">
+                    <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                    <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-menu">
+        <div class="search-icon">
+            <img src="./images/search-icon.svg" alt="">
+        </div>
+        <div class="search-window">
+            <div class="close"></div>
+            <form action="">
+                <h3>Пошук</h3>
+                <br>
+                <div class="stylyzed-input">
+                    <input name="search" type="text" autocomplete="off" required>
+                    <label class="input-label">
+                        <span class="input-span">Введіть ваш пошуковий запит</span>
+                    </label>
+                </div>
+                <button type="submit" style="width: 100%;" class="black-button">Знайти</button>
+                <h4>Знайдено 4 результати</h4>
+                <div class="search-results">
+                    <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської
+                            сільської ради восьмого скликання.</a></p>
+                    <p><a href="/">24.12.2020 об 10 год. відбудеться засідання чергової 3-ї сесії Зимнівської
+                            сільської ради восьмого скликання.</a></p>
+                    <p><a href="/">Пошуковий результат 123</a></p>
+                    <p><a href="/">Пошуковий результат 123</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="accessibility">
+            <img src="./images/vision-icon.svg" alt="">
+        </div>
+        <div class="show-mobile" id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="menu-wrapper">
+                <div id="menu">
+                    <div class="menu-top">
+                        <div class="nav-logo">
+                            <a href="/" style="display: inline-block; height: 90%">
+                                <img src="./images/victoryV1.svg" alt="Головна сторінка">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-menu-mobile">
+                        <a href="#" class="nav-elem underline"><span>Новини</span></a>
+                        <a href="#" class="nav-elem underline"><span>Рішення</span></a>
+                        <a href="#" class="nav-elem underline"><span>Послуги</span></a>
+                        <a href="#" class="nav-elem underline"><span>Муніципалітет</span></a>
+                        <a class="nav-elem underline secondary-menu-anchor"><span>Ще</span></a>
+                        <div class="nav-secondary-menu-mobile">
+                            <a href="#" class="nav-elem underline"><span>Link 1</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 2</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 3</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 4</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 5</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 6</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 7</span></a>
+                            <a href="#" class="nav-elem underline"><span>Link 8</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+  <header class="colored">
+    <div class="header-content">
+      <div class="header-img">
+        <img src="./images/header-image.jpg" alt="">
+      </div>
+      <div class="header-title">
+        <img src="./images/Gerb_Zymne.png" alt="">
+        <h1>Зимнівська громада</h1>
+        <p>Волинська область, Володимир-Волинський район</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="breadcrumb">
+        <p><a href="/">Головна</a></p>
+        <p>Структура муніципалітету</p>
+      </div>
+      <h2>Муніципалітет</h2>
+    </section>
+    <section class="colored">
+      <div class="three-column-variety-container">
+        <div class="item">
+          <div class="two-one-container no-margin-top mobile-one-top">
+            <div class="two-column">
+              <h5>Запорізька міська рада</h5>
+              <br><br><br>
+            </div>
+            <div class="one-column">
+              <img class="emoji-icon" style="margin-left: 40%" src="./images/emoji-classical-building.png" alt="">
+            </div>
+          </div>
+          <a href="/contacts"><button class="black-button alternative">Перейти</button></a>
+        </div>
+        <div class="item white">
+          <div class="two-one-container no-margin-top mobile-one-top">
+            <div class="two-column">
+              <h5>Центр надання адмінпослуг</h5>
+              <br><br><br>
+            </div>
+            <div class="one-column">
+              <img class="emoji-icon" style="margin-left: 40%" src="./images/emoji-office.png" alt="">
+            </div>
+          </div>
+          <a href="/cnap"><button class="black-button">Перейти</button></a>
+        </div>
+        <div class="item">
+          <div class="two-one-container no-margin-top mobile-one-top">
+            <div class="two-column">
+              <h5>Кастомний лінк на відкуп громади</h5>
+              <br><br><br>
+            </div>
+            <div class="one-column">
+              <img class="emoji-icon" style="margin-left: 40%" src="./images/emoji-wave.png" alt="">
+            </div>
+          </div>
+          <a href=""><button class="black-button alternative">Перейти</button></a>
+        </div>
+      </div>
+    </section>
+    <div class="navigation-grid">
+      <h2 class="navigation-header">Підрозділи муніципалітету</h2>
+        <h5 style="color: #888;">Навігація</h5>
+        <a href="#department-1">
+          <h6>Департамент (апарат) виконкому ↓</h6>
+        </a>
+        <a href="#department-2">
+          <h6>Департамент (апарат) виконкому 2 ↓</h6>
+        </a>
+        <a href="#department-3">
+          <h6>Підрозділ 3 ↓</h6>
+        </a>
+        <a href="#department-4">
+          <h6>Підрозділ 4 ↓</h6>
+        </a>
+        <a href="#department-5">
+          <h6>Підрозділ 4 ↓</h6>
+        </a>
+        <a href="#department-6">
+          <h6>Підрозділ 4 ↓</h6>
+        </a>
+    </div>
+    <section id="department-1">
+      <div class="three-column-variety-container">
+        <div class="item">
+          <div>
+            <br><br>
+            <h4>Департамент (апарат) виконкому</h4>
+            <br>
+            <p>Проспект Соборний, 206</p>
+            <br>
+          </div>
+          <a href="/contacts"><button class="black-button">Перейти до підрозділу</button></a>
+        </div>
+        <div class="item colored">
+          <div>
+            <span style="float: right;">Координує роботу</span>
+            <br><br>
+            <h5>НеКірченко Федір Леонидович</h5>
+            <br>
+            <p>Куратор виконавчого комітету Запорізької міської ради</p>
+            <br>
+          </div>
+          <a href="/cnap"><button class="black-button alternative">Детальніше</button></a>
+        </div>
+        <div class="item">
+          <div>
+            <span style="float: right;">Керівник підрозділу</span>
+            <br><br>
+            <h5>Кірченко Федір Леонидович</h5>
+            <br>
+            <p>Директор департаменту (апарату) виконавчого комітету Запорізької міської ради</p>
+            <br>
+          </div>
+          <a href=""><button class="black-button alternative">Детальніше</button></a>
+        </div>
+      </div>
+      <div class="flex-container two-columns-grid">
+        <h3>Підпорядковані підрозділи</h3>
+        <div class="decisions-grid">
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ управління персоналом</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+
+            <div class="decisions-grid">
+              <a href=""><p>Підрозділ 3 рівня зовсім дуже сильно довга назва</p></a>
+              <a href=""><p>Підрозділ 3 рівня зовсім довга назва</p></a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ планування (апарату)</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ діловодства (апарату)</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ забезпечення апарату</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+            <div class="decisions-grid">
+              <a href=""><p>Підрозділ 3 рівня зовсім дуже сильно довга назва</p></a>
+              <a href=""><p>Підрозділ 3 рівня зовсім довга назва</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <h3>Заклади КП</h3>
+        </div>
+        <div class="flex-container" style="width: 100%;">
+          <div class="three-column-container border-top">
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 1</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 2</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 3</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 4</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 5</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="department-2" class="colored">
+      <div class="three-column-variety-container">
+        <div class="item">
+          <div>
+            <br><br>
+            <h4>Департамент (апарат) виконкому 2</h4>
+            <br>
+            <p>Проспект Соборний, 206</p>
+            <br>
+          </div>
+          <a href="/contacts"><button class="black-button">Перейти до підрозділу</button></a>
+        </div>
+        <div class="item white">
+          <div>
+            <span style="float: right;">Координує роботу</span>
+            <br><br>
+            <h5>НеКірченко Федір Леонидович</h5>
+            <br>
+            <p>Куратор виконавчого комітету Запорізької міської ради</p>
+            <br>
+          </div>
+          <a href="/cnap"><button class="black-button alternative">Детальніше</button></a>
+        </div>
+        <div class="item">
+          <div>
+            <span style="float: right;">Керівник підрозділу</span>
+            <br><br>
+            <h5>Кірченко Федір Леонидович</h5>
+            <br>
+            <p>Директор департаменту (апарату) виконавчого комітету Запорізької міської ради</p>
+            <br>
+          </div>
+          <a href=""><button class="black-button alternative">Детальніше</button></a>
+        </div>
+      </div>
+      <div class="flex-container two-columns-grid">
+        <h3>Підпорядковані підрозділи</h3>
+        <div class="decisions-grid">
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ управління персоналом</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+
+            <div class="decisions-grid">
+              <a href=""><p>Підрозділ 3 рівня зовсім дуже сильно довга назва</p></a>
+              <a href=""><p>Підрозділ 3 рівня зовсім довга назва</p></a>
+            </div>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ планування (апарату)</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ діловодства (апарату)</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+          </div>
+          <div class="item">
+            <a class="button-with-arrow">
+              <h5>Відділ забезпечення апарату</h5>
+                <svg style="margin-bottom: -2px;" width="29" height="29" viewBox="0 0 26 26" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12.73" cy="13.1045" r="12.429" fill="#E6EEF2" />
+                  <path
+                    d="M8.17334 12.3545C7.75913 12.3545 7.42334 12.6903 7.42334 13.1045C7.42334 13.5187 7.75913 13.8545 8.17334 13.8545L8.17334 12.3545ZM17.8172 13.6348C18.1101 13.3419 18.1101 12.8671 17.8172 12.5742L13.0442 7.80119C12.7513 7.5083 12.2765 7.5083 11.9836 7.80119C11.6907 8.09409 11.6907 8.56896 11.9836 8.86185L16.2262 13.1045L11.9836 17.3471C11.6907 17.64 11.6907 18.1149 11.9836 18.4078C12.2765 18.7007 12.7513 18.7007 13.0442 18.4078L17.8172 13.6348ZM8.17334 13.8545L17.2869 13.8545L17.2869 12.3545L8.17334 12.3545L8.17334 13.8545Z"
+                    fill="black" />
+                </svg>
+            </a>
+            <div class="decisions-grid">
+              <a href=""><p>Підрозділ 3 рівня зовсім дуже сильно довга назва</p></a>
+              <a href=""><p>Підрозділ 3 рівня зовсім довга назва</p></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-container">
+          <h3>Заклади КП</h3>
+        </div>
+        <div class="flex-container" style="width: 100%;">
+          <div class="three-column-container border-top">
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 1</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 2</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 3</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 4</h4>
+              </a>
+            </div>
+            <div class="item">
+              <a href="">
+                <h4>Заклад КП 5</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <a href="#" id="scroll-top">↑</a>
+  </main>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
