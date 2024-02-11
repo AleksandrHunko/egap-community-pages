@@ -1074,7 +1074,6 @@ section.colored {
   background-position: top right;
 }
 
-
 .decisions-grid {
   margin-top: 48px;
   width: 100%;
@@ -1083,8 +1082,6 @@ section.colored {
   grid-row-gap: 20px;
   grid-column-gap: 40px;
 }
-
-
 
 .decisions-item {
   display: flex;
@@ -1336,6 +1333,24 @@ a:hover.end-option h3{
   margin-top: 0;
 }
 
+.title-round-photo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-round-photo-item h4 {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.title-round-photo-item img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
 .two-column-container, .three-column-container {
   display: grid;
   grid-row-gap: 32px;
@@ -1433,6 +1448,11 @@ a:hover.end-option h3{
 
 .two-one-container.border {
   border: solid 2px #000;
+}
+
+.two-one-container.border-top {
+  padding-top: 8px; 
+  border-top: solid 1px #000;
 }
 
 .two-one-container.no-margin-top {
