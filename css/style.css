@@ -2488,16 +2488,18 @@ a:hover.end-option h3{
 }
 
 .bottom-navigation-grid .item label p {
-  color: #888;
+  color: #000;
   margin-bottom: 8px;
+  text-transform: none;
 }
 
 .bottom-navigation-grid .item label p.header {
-  color: #000;
+  color:#343434;
+  text-transform: uppercase;
   margin-bottom: 12px;
 }
 .bottom-navigation-grid .item label p:hover {
-  color: #000;
+  text-decoration: underline;
 }
 
 
