@@ -1285,7 +1285,7 @@ section.colored {
   width: 29vw;
   height: 29vw;
   max-height: 400px;
-  max-width: 400px;
+  max-width: min(400px, 100%)
 }
 
 .end-options {
