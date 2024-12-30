@@ -2517,6 +2517,7 @@ a:hover.end-option h3{
 
 .bottom-navigation-grid .item label p.header {
   color:#343434;
+  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
