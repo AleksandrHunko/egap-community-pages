@@ -307,7 +307,7 @@ h6 {
 
 p, li {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 300;
 }
 
@@ -2518,9 +2518,9 @@ a:hover.end-option h3{
 .bottom-navigation-grid .item label p.header {
   color:#343434;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
-.bottom-navigation-grid .item label p:hover {
+.bottom-navigation-grid .item a label p:hover {
   text-decoration: underline;
 }
 
