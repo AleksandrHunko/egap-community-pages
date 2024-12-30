@@ -2521,7 +2521,7 @@ a:hover.end-option h3{
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.bottom-navigation-grid .item a label p:hover {
+.bottom-navigation-grid .item label a p:hover {
   text-decoration: underline;
 }
 
