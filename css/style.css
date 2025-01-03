@@ -1919,7 +1919,19 @@ a:hover.end-option h3{
   color: #FF1717;
 }
 
-
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center div {
+  margin: 24px 32px;
+  text-align: center;
+}
+.flex-center img {
+  width: 312px;
+  height: auto;
+}
 
 
 .paging {
@@ -3086,6 +3098,10 @@ svg:hover .fill {
 
   .div-steps {
     padding: 24px 20% 12px 0;
+  }
+
+  .flex-center {
+    flex-direction: column;
   }
 
   /* page styles end */
