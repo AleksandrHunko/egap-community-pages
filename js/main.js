@@ -57,7 +57,6 @@ window.addEventListener('load', function () {
 
   if (document.cookie.split('; ').find(row => row.startsWith('enable-contrast'))) {
     document.querySelector('body').classList.toggle('contrast-enable')
-    document.querySelector('.accessibility').querySelector('p').innerHTML = 'Стандартна версія'
   }
 
   try {
