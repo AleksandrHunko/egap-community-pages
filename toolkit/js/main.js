@@ -45,4 +45,16 @@ window.addEventListener('load', function () {
             thisButton.target.parentElement.classList.remove('active')
         })
     }
+
+    const scrollTopButton = document.querySelector('#scroll-top')
+
+    if (scrollTopButton != null) {
+      window.onscroll = function () {
+        if (window.scrollY > 1200) {
+          scrollTopButton.classList.add('show');
+        } else {
+          scrollTopButton.classList.remove('show');
+        }
+      };
+    }
 })
