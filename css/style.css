@@ -170,7 +170,8 @@ select option {
   outline: none;
 }
 
-.stylyzed-input input:focus + label .input-span, .stylyzed-input input.valid + label .input-span {
+.stylyzed-input input:focus + label .input-span, .stylyzed-input input.valid + label .input-span,  
+.stylyzed-input input.always-up + label .input-span{
   transform: translateY(-170%);
   font-size: 12px;
 }
