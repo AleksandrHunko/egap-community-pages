@@ -2308,7 +2308,16 @@ a:hover.end-option h3{
   width: 46%;
 }
 
+.image-row.padded-images > div {
+  padding: 36px;
+}
+
 .image-row > div img {
+  width: 100%;
+  height: auto;
+}
+
+.image-row canvas {
   width: 100%;
   height: auto;
 }
@@ -2316,6 +2325,7 @@ a:hover.end-option h3{
 .image-row > div p {
   margin-top: 16px;
 }
+
 
 .payments-block {
   display: flex;
@@ -3637,6 +3647,10 @@ svg:hover .fill {
     margin: 24px 0;
     width: 90%;
     margin-left: 10%;
+  }
+
+  .image-row.padded-images > div {
+    padding: 0;
   }
 
   .payments-item .info {
