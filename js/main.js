@@ -99,4 +99,17 @@ window.addEventListener('load', function () {
     };
   }
 
+  const textareas = document.querySelectorAll(".stylyzed-textarea textarea");
+
+  if (!textareas.length) return;
+
+  textareas.forEach(textarea => {
+    const resizeTextarea = () => {
+      textarea.style.height = "auto";
+      textarea.style.height = textarea.scrollHeight + "px";
+    };
+    resizeTextarea(); 
+    textarea.addEventListener("input", resizeTextarea);
+  });
+
 })
