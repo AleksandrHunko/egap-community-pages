@@ -888,7 +888,7 @@ section.colored {
 
 .service-item {
   display: flex;
-  height: 320px;
+  height: 332px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1309,8 +1309,9 @@ section.colored {
 }
 
 .council-item p {
-  max-height: 160px;
+  max-height: 142px;
   overflow: hidden;
+  margin-bottom: 12px;
 }
 
 .council-item .social-icons {
@@ -1339,7 +1340,7 @@ section.colored {
 a.end-option {
   display: block;
   width: 31%;
-  padding-top: 20px;
+  padding: 20px 0;
   border-top: solid 2px #000;
 }
 
